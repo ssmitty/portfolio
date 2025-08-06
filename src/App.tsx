@@ -55,7 +55,7 @@ const App: React.FC = () => {
       <header className="header">
         <div className="header-content">
           {/* Profile Picture */}
-          <img src="/images/headshot.jpg" alt="Sean Smith" className="profile-pic" />
+          <img src="./images/headshot.jpg" alt="Sean Smith" className="profile-pic" />
           
           {/* Name and Title */}
           <div className="header-text">

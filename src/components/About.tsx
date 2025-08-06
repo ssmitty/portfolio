@@ -84,13 +84,13 @@ const About: React.FC = () => {
             <div className="athletics-images">
               {/* GPA celebration photo */}
               <img 
-                src="/images/gpa_celebration.jpg" 
+                src="./images/gpa_celebration.jpg" 
                 alt="Sean Smith 4.0 GPA celebration" 
                 className="athletics-pic" 
               />
               {/* Soccer action photo */}
               <img 
-                src="/images/soccer_action.jpg" 
+                src="./images/soccer_action.jpg" 
                 alt="Sean Smith soccer action" 
                 className="athletics-pic" 
               />
