@@ -1,0 +1,141 @@
+
+
+/* Main experience container */
+.experience {
+  padding: 1rem 0; /* Vertical padding for spacing */
+}
+
+/* Experience section header */
+.experience h2 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1.8rem; /* Large, prominent font size */
+  margin-bottom: 2rem; /* Space below header */
+  text-align: center; /* Center alignment */
+}
+
+
+
+/* Main experience card container */
+.experience-card {
+  background: var(--white); /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Internal spacing */
+  box-shadow: var(--shadow); /* Depth with shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for experience cards */
+.experience-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+}
+
+
+
+/* Container for experience title and metadata */
+.experience-header {
+  margin-bottom: 1.5rem; /* Space below header */
+}
+
+/* Experience title styling */
+.experience-header h3 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.5rem; /* Large font size */
+  margin-bottom: 0.5rem; /* Space below title */
+}
+
+
+
+/* Container for location and duration information */
+.experience-meta {
+  display: flex;
+  gap: 1rem; /* Space between metadata items */
+  color: var(--text-light); /* Light text for secondary information */
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Individual metadata items (location, duration) */
+.location, .duration {
+  background: var(--bg-light); /* Light background */
+  padding: 0.25rem 0.75rem; /* Comfortable padding */
+  border-radius: 15px; /* Rounded pill shape */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+
+/* Container for technology tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap to new lines */
+  gap: 0.5rem; /* Space between technology tags */
+  margin-bottom: 1.5rem; /* Space below technology stack */
+}
+
+/* Individual technology tag styling */
+.tech-tag {
+  background: var(--ud-blue); /* UD blue background */
+  color: var(--ud-gold); /* UD gold text */
+  padding: 0.25rem 0.75rem; /* Comfortable padding */
+  border-radius: 20px; /* Rounded pill shape */
+  font-size: 0.8rem; /* Small, readable font */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+
+
+/* Achievements section header */
+.achievements h4 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1.2rem; /* Medium font size */
+  margin-bottom: 1rem; /* Space below header */
+}
+
+/* Container for achievements list */
+.achievements ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual achievement items */
+.achievements li {
+  padding: 0.75rem 0; /* Vertical spacing between achievements */
+  border-bottom: 1px solid #f0f0f0; /* Subtle border between items */
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.95rem; /* Standard font size */
+  line-height: 1.5; /* Comfortable line spacing */
+}
+
+/* Remove border from last achievement item */
+.achievements li:last-child {
+  border-bottom: none; /* No border on last item */
+}
+
+/* Emphasis styling for achievement titles */
+.achievements strong {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+@media (max-width: 768px) {
+  /* Reduced padding for mobile cards */
+  .experience-card {
+    padding: 1.5rem;
+  }
+  
+  /* Stack metadata items vertically on mobile */
+  .experience-meta {
+    flex-direction: column; /* Vertical layout */
+    gap: 0.5rem; /* Reduced spacing */
+  }
+  
+  /* Tighter spacing for mobile technology tags */
+  .tech-stack {
+    gap: 0.25rem;
+  }
+  
+  /* Smaller technology tags for mobile */
+  .tech-tag {
+    font-size: 0.75rem; /* Smaller font */
+    padding: 0.2rem 0.6rem; /* Reduced padding */
+  }
+} 

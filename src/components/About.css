@@ -1,0 +1,201 @@
+
+
+/* Main about container */
+.about {
+  padding: 1rem 0; /* Vertical padding for spacing */
+}
+
+/* Grid layout for organizing about sections */
+.about-grid {
+  display: grid;
+  gap: 2rem; /* Space between sections */
+  grid-template-columns: 1fr; /* Single column layout */
+}
+
+/* Section headers styling */
+.about-section h2 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1.8rem; /* Large, prominent font size */
+  margin-bottom: 1rem; /* Space below header */
+  text-align: center; /* Center alignment */
+}
+
+
+
+/* Card container for content sections */
+.content-card {
+  background: var(--white); /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Internal spacing */
+  box-shadow: var(--shadow); /* Depth with shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for content cards */
+.content-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+}
+/* Main section headers within cards */
+.content-card h3 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.4rem; /* Large font size */
+  margin-bottom: 0.5rem; /* Space below header */
+}
+
+/* Subsection headers */
+.content-card h4 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1.2rem; /* Medium font size */
+  margin: 1.5rem 0 1rem 0; /* Vertical spacing */
+}
+
+/* Category headers for coursework */
+.content-card h5 {
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 1rem; /* Standard font size */
+  margin-bottom: 0.5rem; /* Space below header */
+}
+
+/* Academic information styling */
+.degree, .gpa, .graduation, .position {
+  color: var(--text-light); /* Light text for secondary information */
+  margin-bottom: 0.5rem; /* Space between items */
+  font-size: 1rem; /* Standard font size */
+}
+
+/* GPA styling with emphasis */
+.gpa {
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: var(--ud-blue); /* UD blue to highlight achievement */
+}
+
+
+
+/* Grid layout for organizing coursework categories */
+.coursework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 2rem; /* Space between columns */
+}
+
+/* Course category container */
+.course-category ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual course items */
+.course-category li {
+  padding: 0.25rem 0; /* Vertical spacing between courses */
+  color: var(--text-light); /* Light text for secondary information */
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+/* Custom bullet points for course lists */
+.course-category li:before {
+  content: "▸"; /* Custom bullet character */
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-weight: bold; /* Bold for emphasis */
+  margin-right: 0.5rem; /* Space between bullet and text */
+}
+
+
+
+/* Container for athletic images */
+.athletics-images {
+  display: flex;
+  gap: 1rem; /* Space between images */
+  justify-content: center; /* Center images horizontally */
+  margin: 1.5rem 0; /* Vertical spacing */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Athletic image styling */
+.athletics-pic {
+  width: 350px; /* Fixed width for consistency */
+  height: 350px; /* Fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio while filling container */
+  border-radius: 12px; /* Rounded corners */
+  border: 3px solid var(--ud-blue); /* UD blue border */
+  box-shadow: var(--shadow); /* Depth with shadow */
+}
+
+
+
+/* Container for achievements list */
+.achievements {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual achievement items */
+.achievements li {
+  padding: 0.5rem 0; /* Vertical spacing between achievements */
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.95rem; /* Standard font size */
+}
+
+
+/* Grid layout for interests section */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between interest items */
+}
+
+/* Individual interest item */
+.interest-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 1rem; /* Internal spacing */
+  background: var(--bg-light); /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for interest items */
+.interest-item:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Interest icon styling */
+.interest-icon {
+  font-size: 1.2rem; /* Large icon size */
+  margin-bottom: 0.5rem; /* Space below icon */
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: var(--ud-blue); /* UD blue for consistency */
+}
+
+
+
+@media (max-width: 768px) {
+  /* Single column layout for mobile */
+  .coursework-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Stack athletic images vertically on mobile */
+  .athletics-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Smaller athletic images for mobile */
+  .athletics-pic {
+    width: 280px;
+    height: 280px;
+  }
+  
+  /* Two-column grid for interests on mobile */
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Reduced padding for mobile cards */
+  .content-card {
+    padding: 1.5rem;
+  }
+} 

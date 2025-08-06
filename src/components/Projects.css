@@ -1,0 +1,211 @@
+
+
+/* Main projects container */
+.projects {
+  padding: 1rem 0; /* Vertical padding for spacing */
+}
+
+/* Projects section header */
+.projects h2 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1.8rem; /* Large, prominent font size */
+  margin-bottom: 2rem; /* Space below header */
+  text-align: center; /* Center alignment */
+}
+
+
+
+/* Grid container for organizing project cards */
+.projects-grid {
+  display: grid;
+  gap: 2rem; /* Space between project cards */
+  grid-template-columns: 1fr; /* Single column layout */
+}
+
+/* Individual project card container */
+.project-card {
+  background: var(--white); /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Internal spacing */
+  box-shadow: var(--shadow); /* Depth with shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+}
+
+
+
+/* Container for project title and technology stack */
+.project-header {
+  margin-bottom: 1.5rem; /* Space below header */
+}
+
+/* Project title styling */
+.project-header h3 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.4rem; /* Large font size */
+  margin-bottom: 1rem; /* Space below title */
+}
+
+
+/* Container for technology tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap to new lines */
+  gap: 0.5rem; /* Space between technology tags */
+}
+
+/* Individual technology tag styling */
+.tech-tag {
+  background: var(--ud-blue); /* UD blue background */
+  color: var(--ud-gold); /* UD gold text */
+  padding: 0.25rem 0.75rem; /* Comfortable padding */
+  border-radius: 20px; /* Rounded pill shape */
+  font-size: 0.8rem; /* Small, readable font */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+
+
+/* Container for project demo content */
+.project-demo {
+  margin: 1.5rem 0; /* Vertical spacing */
+  text-align: center; /* Center demo content */
+}
+
+/* Container for GIF images (legacy support) */
+.project-gif {
+  max-width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid var(--ud-blue); /* UD blue border */
+  box-shadow: var(--shadow); /* Depth with shadow */
+}
+
+/* Container for embedded videos */
+.demo-video {
+  position: relative; /* For positioning context */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Maximum width for readability */
+  margin: 0 auto; /* Center the video container */
+}
+
+/* Embedded video styling */
+.project-video {
+  width: 100%; /* Full width of container */
+  height: 315px; /* Fixed height for 16:9 aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid var(--ud-blue); /* UD blue border */
+  box-shadow: var(--shadow); /* Depth with shadow */
+}
+
+
+
+/* Container for project description and features */
+.project-content {
+  margin-top: 1.5rem; /* Space above content */
+}
+
+/* Project description text */
+.project-description {
+  font-style: italic; /* Italic for emphasis */
+  color: var(--text-light); /* Light text for secondary information */
+  margin-bottom: 1rem; /* Space below description */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.5; /* Comfortable line spacing */
+}
+
+
+/* Container for project features list */
+.project-features {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual feature items */
+.project-features li {
+  margin-bottom: 0.75rem; /* Space between features */
+  padding-left: 1.5rem; /* Indent for custom bullet */
+  position: relative; /* For positioning custom bullet */
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.95rem; /* Standard font size */
+  line-height: 1.4; /* Comfortable line spacing */
+}
+
+/* Custom bullet points for feature lists */
+.project-features li:before {
+  content: "▸"; /* Custom bullet character */
+  position: absolute; /* Position relative to list item */
+  left: 0; /* Align to left edge */
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+
+
+/* Container for project action links */
+.project-links {
+  margin-top: 1.5rem; /* Space above links */
+  text-align: center; /* Center the demo link */
+}
+
+/* Demo link button styling */
+.demo-link {
+  display: inline-block; /* Inline block for button behavior */
+  background: var(--ud-blue); /* UD blue background */
+  color: var(--ud-gold); /* UD gold text */
+  padding: 0.75rem 1.5rem; /* Comfortable padding */
+  border-radius: 25px; /* Rounded pill shape */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold for emphasis */
+  font-size: 0.9rem; /* Standard font size */
+  transition: all 0.2s ease; /* Smooth transitions */
+  border: 2px solid var(--ud-blue); /* UD blue border */
+}
+
+/* Hover effect for demo link */
+.demo-link:hover {
+  background: var(--ud-gold); /* UD gold background on hover */
+  color: var(--ud-blue); /* UD blue text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: var(--shadow); /* Enhanced shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+  /* Reduced padding for mobile cards */
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  /* Tighter spacing for mobile technology tags */
+  .tech-stack {
+    gap: 0.25rem;
+  }
+  
+  /* Smaller technology tags for mobile */
+  .tech-tag {
+    font-size: 0.75rem; /* Smaller font */
+    padding: 0.2rem 0.6rem; /* Reduced padding */
+  }
+  
+  /* Smaller feature text for mobile */
+  .project-features li {
+    font-size: 0.9rem;
+  }
+  
+  /* Smaller video height for mobile */
+  .project-video {
+    height: 200px;
+  }
+  
+  /* Smaller demo link for mobile */
+  .demo-link {
+    padding: 0.6rem 1.2rem; /* Reduced padding */
+    font-size: 0.85rem; /* Smaller font */
+  }
+} 

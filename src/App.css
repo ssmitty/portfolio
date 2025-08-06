@@ -1,0 +1,129 @@
+
+
+/* Root application container */
+.App {
+  min-height: 100vh; /* Ensures the app takes up the full viewport height */
+  background-color: var(--bg-light); /* Light background for better readability */
+}
+
+/* Main header with gradient background */
+.header {
+  background: linear-gradient(135deg, var(--ud-blue) 0%, #004080 100%); /* UD blue gradient */
+  color: var(--ud-gold); /* UD gold text color */
+  padding: 2rem 0; /* Vertical padding for spacing */
+  text-align: center; /* Center all header content */
+  box-shadow: var(--shadow); /* Add depth with shadow */
+}
+
+/* Container for header content (profile pic, name, title) */
+.header-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 2rem; /* Space between content and navigation */
+}
+
+/* Profile picture styling */
+.profile-pic {
+  width: 150px; /* Fixed width for consistency */
+  height: 150px; /* Fixed height for consistency */
+  border-radius: 50%; /* Circular shape */
+  border: 4px solid var(--ud-gold); /* UD gold border */
+  object-fit: cover; /* Maintain aspect ratio while filling container */
+  object-position: center 15%; /* Focus on upper portion to show top of head */
+  margin-bottom: 1rem; /* Space below the image */
+  box-shadow: var(--shadow); /* Add depth */
+}
+
+/* Name styling */
+.header-text h1 {
+  font-size: 2.5rem; /* Large, prominent font size */
+  margin-bottom: 0.5rem; /* Space between name and title */
+  font-weight: 700; /* Bold weight for emphasis */
+}
+
+/* Title/subtitle styling */
+.header-text p {
+  font-size: 1.1rem; /* Slightly larger than body text */
+  opacity: 0.9; /* Slightly transparent for hierarchy */
+}
+
+
+
+/* Navigation container */
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the navigation buttons */
+  gap: 1rem; /* Space between buttons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual navigation button styling */
+.nav-button {
+  background: transparent; /* Transparent background by default */
+  color: var(--ud-gold); /* UD gold text */
+  border: 2px solid var(--ud-gold); /* UD gold border */
+  padding: 0.75rem 1.5rem; /* Comfortable padding for clicking */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 1rem; /* Readable font size */
+  font-weight: 600; /* Semi-bold for emphasis */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: all 0.3s ease; /* Smooth transitions for all changes */
+  min-width: 120px; /* Minimum width for consistency */
+}
+
+/* Hover state for navigation buttons */
+.nav-button:hover {
+  background: var(--ud-gold); /* Fill with UD gold on hover */
+  color: var(--ud-blue); /* UD blue text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+}
+
+/* Active state for the currently selected tab */
+.nav-button.active {
+  background: var(--ud-gold); /* UD gold background */
+  color: var(--ud-blue); /* UD blue text */
+  box-shadow: var(--shadow); /* Shadow for depth */
+}
+
+
+
+/* Main content container */
+.main-content {
+  max-width: 1200px; /* Maximum width for readability */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem; /* Padding around content */
+}
+
+
+
+@media (max-width: 768px) {
+  /* Smaller font size for mobile */
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  
+  /* Tighter spacing for mobile navigation */
+  .navigation {
+    gap: 0.5rem;
+  }
+  
+  /* Smaller buttons for mobile */
+  .nav-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+  
+  /* Reduced padding for mobile content */
+  .main-content {
+    padding: 1rem;
+  }
+  
+  /* Smaller profile picture for mobile */
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+} 
