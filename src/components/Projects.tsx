@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
             <div className="demo-video">
               {/* Embedded YouTube demo video */}
               <iframe 
-                src="https://www.youtube.com/embed/_w2WLCA_fL8" 
+                src="https://www.youtube.com/embed/_w2WLCA_fL8?si=rhYWtZ6PVxj6pFTT" 
                 title="twang.ai Demo"
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
