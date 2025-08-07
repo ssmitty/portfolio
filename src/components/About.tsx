@@ -11,6 +11,7 @@ import './About.css';
  * Features:
  * - Academic background with GPA and coursework details
  * - Athletic achievements as Division I soccer player
+ * - Contact information with professional links
  * - Responsive grid layout for organized information display
  * - Visual elements including profile images
  * 
@@ -65,6 +66,36 @@ const About: React.FC = () => {
                   <li>Calculus 3</li>
                   <li>Probability and Statistics</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Information Section */}
+        <div className="about-section">
+          <h2>Contact Information</h2>
+          
+          {/* Content card containing contact information */}
+          <div className="content-card">
+            <div className="contact-info">
+              {/* Phone number */}
+              <div className="contact-item">
+                <span className="contact-label">Phone:</span>
+                <a href="tel:+16098150282" className="contact-link">[+1 (609) 815-0282]</a>
+              </div>
+              
+              {/* Email address */}
+              <div className="contact-item">
+                <span className="contact-label">Email:</span>
+                <a href="mailto:ssmitty@udel.edu" className="contact-link">ssmitty@udel.edu</a>
+              </div>
+              
+              {/* LinkedIn profile */}
+              <div className="contact-item">
+                <span className="contact-label">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/sean-matthew-smith/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                  [https://www.linkedin.com/in/sean-matthew-smith/]
+                </a>
               </div>
             </div>
           </div>

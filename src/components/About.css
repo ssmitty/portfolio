@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   About Component Styles
+   ========================================================================== */
 
 /* Main about container */
 .about {
@@ -20,7 +22,9 @@
   text-align: center; /* Center alignment */
 }
 
-
+/* ==========================================================================
+   Content Card Styles
+   ========================================================================== */
 
 /* Card container for content sections */
 .content-card {
@@ -36,6 +40,11 @@
   transform: translateY(-2px); /* Slight lift on hover */
   box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
 }
+
+/* ==========================================================================
+   Typography Styles
+   ========================================================================== */
+
 /* Main section headers within cards */
 .content-card h3 {
   color: var(--ud-blue); /* UD blue for emphasis */
@@ -70,7 +79,56 @@
   color: var(--ud-blue); /* UD blue to highlight achievement */
 }
 
+/* ==========================================================================
+   Contact Information Styles
+   ========================================================================== */
 
+/* Container for contact information */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between contact items */
+}
+
+/* Individual contact item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between label and link */
+  padding: 0.75rem 0; /* Vertical spacing */
+  border-bottom: 1px solid #f0f0f0; /* Subtle border between items */
+}
+
+/* Remove border from last contact item */
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+/* Contact label styling */
+.contact-label {
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: var(--ud-blue); /* UD blue for consistency */
+  min-width: 80px; /* Fixed width for alignment */
+  font-size: 0.95rem;
+}
+
+/* Contact link styling */
+.contact-link {
+  color: var(--text-dark); /* Dark text for readability */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.95rem;
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Hover effect for contact links */
+.contact-link:hover {
+  color: var(--ud-blue); /* UD blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* ==========================================================================
+   Coursework Grid Styles
+   ========================================================================== */
 
 /* Grid layout for organizing coursework categories */
 .coursework-grid {
@@ -100,7 +158,9 @@
   margin-right: 0.5rem; /* Space between bullet and text */
 }
 
-
+/* ==========================================================================
+   Athletics Section Styles
+   ========================================================================== */
 
 /* Container for athletic images */
 .athletics-images {
@@ -121,7 +181,9 @@
   box-shadow: var(--shadow); /* Depth with shadow */
 }
 
-
+/* ==========================================================================
+   Achievements List Styles
+   ========================================================================== */
 
 /* Container for achievements list */
 .achievements {
@@ -136,6 +198,9 @@
   font-size: 0.95rem; /* Standard font size */
 }
 
+/* ==========================================================================
+   Interests Grid Styles (for future use)
+   ========================================================================== */
 
 /* Grid layout for interests section */
 .interests-grid {
@@ -168,7 +233,9 @@
   color: var(--ud-blue); /* UD blue for consistency */
 }
 
-
+/* ==========================================================================
+   Responsive Design - Mobile Styles
+   ========================================================================== */
 
 @media (max-width: 768px) {
   /* Single column layout for mobile */
@@ -197,5 +264,17 @@
   /* Reduced padding for mobile cards */
   .content-card {
     padding: 1.5rem;
+  }
+  
+  /* Stack contact items vertically on mobile */
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  /* Remove fixed width for mobile contact labels */
+  .contact-label {
+    min-width: auto;
   }
 } 
