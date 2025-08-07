@@ -78,6 +78,66 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
+        {/* twang.ai Project Card */}
+        <div className="project-card">
+          {/* Project header with title and technology stack */}
+          <div className="project-header">
+            <h3>twang.ai</h3>
+            {/* Technology stack tags */}
+            <div className="tech-stack">
+              <span className="tech-tag">Next.js</span>
+              <span className="tech-tag">TypeScript</span>
+              <span className="tech-tag">Tailwind CSS</span>
+              <span className="tech-tag">AI API</span>
+              <span className="tech-tag">GitHub Pages</span>
+            </div>
+          </div>
+          
+          {/* Demo video section */}
+          <div className="project-demo">
+            <div className="demo-video">
+              {/* Embedded YouTube demo video */}
+              <iframe 
+                src="https://www.youtube.com/embed/_w2WLCA_fL8" 
+                title="twang.ai Demo"
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                className="project-video"
+              ></iframe>
+            </div>
+          </div>
+          
+          {/* Project content with description and features */}
+          <div className="project-content">
+            {/* Project description */}
+            <p className="project-description">
+              AI-powered country music lyric generator that creates personalized country songs based on user preferences through an interactive quiz system.
+            </p>
+            
+            {/* List of project features and achievements */}
+            <ul className="project-features">
+              <li>Interactive quiz system for mood, speed, tempo, theme, and story preferences</li>
+              <li>AI-powered lyric generation using custom API endpoints</li>
+              <li>Modern responsive design with seamless navigation between pages</li>
+              <li>Deployed on GitHub Pages with proper routing and static export</li>
+              <li>Real-time form processing and dynamic results display</li>
+            </ul>
+            
+            {/* Demo link section for live project access */}
+            <div className="project-links">
+              <a 
+                href="https://ssmitty.github.io/twang.ai/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="demo-link"
+              >
+                Try Demo →
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* The Pink Path Project Card */}
         <div className="project-card">
           {/* Project header with title and technology stack */}

@@ -81,7 +81,7 @@ const About: React.FC = () => {
               {/* Phone number */}
               <div className="contact-item">
                 <span className="contact-label">Phone:</span>
-                <a href="tel:+16098150282" className="contact-link">[+1 (609) 815-0282]</a>
+                <a href="tel:+16098150282" className="contact-link">+1 (609) 815-0282</a>
               </div>
               
               {/* Email address */}
@@ -94,7 +94,7 @@ const About: React.FC = () => {
               <div className="contact-item">
                 <span className="contact-label">LinkedIn:</span>
                 <a href="https://www.linkedin.com/in/sean-matthew-smith/" target="_blank" rel="noopener noreferrer" className="contact-link">
-                  [https://www.linkedin.com/in/sean-matthew-smith/]
+                  linkedin.com/in/sean-matthew-smith
                 </a>
               </div>
             </div>
