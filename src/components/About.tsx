@@ -46,9 +46,6 @@ const About: React.FC = () => {
               <div className="course-category">
                 <h5>Computer Science</h5>
                 <ul>
-                  <li>Introduction to Algorithms</li>
-                  <li>Operating Systems</li>
-                  <li>Database Systems</li>
                   <li>Systems Programming</li>
                   <li>Machine Organization and Assembly Language</li>
                   <li>Data Structures</li>
@@ -63,7 +60,7 @@ const About: React.FC = () => {
                 <ul>
                   <li>Linear Algebra</li>
                   <li>Discrete Mathematics</li>
-                  <li>Calculus 3</li>
+                  <li>Calculus II</li>
                   <li>Probability and Statistics</li>
                 </ul>
               </div>
