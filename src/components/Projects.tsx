@@ -124,17 +124,7 @@ const Projects: React.FC = () => {
               <li>Real-time form processing and dynamic results display</li>
             </ul>
             
-            {/* Demo link section for live project access */}
-            <div className="project-links">
-              <a 
-                href="https://ssmitty.github.io/twang.ai/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="demo-link"
-              >
-                Try Demo →
-              </a>
-            </div>
+
           </div>
         </div>
 
