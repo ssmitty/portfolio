@@ -9,11 +9,11 @@ import './About.css';
  * athletic success at the University of Delaware.
  * 
  * Features:
- * - Academic background with GPA and coursework details
- * - Athletic achievements as Division I soccer player
- * - Contact information with professional links
- * - Responsive grid layout for organized information display
- * - Visual elements including profile images
+ * • Academic background with GPA and coursework details
+ * • Athletic achievements as Division I soccer player
+ * • Contact information with professional links
+ * • Responsive grid layout for organized information display
+ * • Visual elements including profile images
  * 
  * @component
  * @returns {JSX.Element} The about section with academic and athletic information
@@ -119,7 +119,7 @@ const About: React.FC = () => {
           <div className="content-card">
             {/* Soccer team and position information */}
             <h3>University of Delaware Division I Men's Soccer</h3>
-            <p className="position">Center Back | August 2023 - Present</p>
+            <p className="position">Center Back | August 2023 to Present</p>
             
             {/* Container for athletic images */}
             <div className="athletics-images">
@@ -141,7 +141,7 @@ const About: React.FC = () => {
             <ul className="achievements">
               <li>Lead team to CAA Semi-Finals and first winning record since 2016</li>
               <li>Played 1,000+ minutes during the season</li>
-              <li>Earned CAA Rookie of the Week honors (October 16-23, 2023)</li>
+              <li>Earned CAA Rookie of the Week honors (October 16 to 23, 2023)</li>
               <li>Balance full course load with competition, practice, travel, and film study</li>
             </ul>
           </div>

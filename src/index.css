@@ -1,6 +1,6 @@
 
 
-/* CSS Reset - Remove default browser styling */
+/* CSS Reset • Remove default browser styling */
 * {
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
@@ -10,7 +10,7 @@
 
 /* Main body element styling */
 body {
-  /* Font stack with fallbacks for cross-platform compatibility */
+  /* Font stack with fallbacks for cross platform compatibility */
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   
   /* Font smoothing for better rendering on webkit browsers */

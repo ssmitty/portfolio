@@ -9,11 +9,11 @@ import './Projects.css';
  * in a card format with visual demonstrations and interactive elements.
  * 
  * Features:
- * - Embedded YouTube demo videos for visual project demonstrations
- * - Technology stack tags for each project
- * - Detailed project descriptions and feature lists
- * - Interactive demo links for live project access
- * - Responsive design for mobile and desktop viewing
+ * • Embedded YouTube demo videos for visual project demonstrations
+ * • Technology stack tags for each project
+ * • Detailed project descriptions and feature lists
+ * • Interactive demo links for live project access
+ * • Responsive design for mobile and desktop viewing
  * 
  * @component
  * @returns {JSX.Element} The projects showcase section

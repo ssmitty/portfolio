@@ -9,10 +9,10 @@ import './PrepU.css';
  * background, and specific experience that matches the internship needs.
  * 
  * Features:
- * - Detailed skill alignment with internship requirements
- * - Project examples demonstrating relevant experience
- * - Student-athlete perspective and background
- * - Contact information and availability
+ * • Detailed skill alignment with internship requirements
+ * • Project examples demonstrating relevant experience
+ * • Student-athlete perspective and background
+ * • Contact information and availability
  * 
  * @component
  * @returns {JSX.Element} The Prep U internship alignment page
@@ -33,7 +33,7 @@ const PrepU: React.FC = () => {
       <div className="availability-card">
         <h3>Available for Fall 2025 Internship</h3>
         <div className="availability-details">
-          <span>• August - December 2025</span>
+          <span>• August to December 2025</span>
           <span>• Part-Time (Flexible Schedule)</span>
           <span>• Remote (U.S.-based)</span>
           <span>• 4.0 Major GPA in Computer Science</span>

@@ -13,10 +13,10 @@ import PrepU from './components/PrepU';
  * selected navigation tab.
  * 
  * Features:
- * - Header with profile information and navigation
- * - Tab-based content switching
- * - Responsive design for mobile and desktop
- * - University of Delaware themed styling
+ * • Header with profile information and navigation
+ * • Tab-based content switching
+ * • Responsive design for mobile and desktop
+ * • University of Delaware themed styling
  * 
  * @component
  * @returns {JSX.Element} The main application layout
@@ -27,7 +27,7 @@ const App: React.FC = () => {
 
   /**
    * Handles navigation tab changes
-   * @param {string} tabName - The name of the tab to activate
+   * @param {string} tabName • The name of the tab to activate
    */
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
@@ -54,7 +54,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      {/* Header Section - Contains profile info and navigation */}
+      {/* Header Section • Contains profile info and navigation */}
       <header className="header">
         <div className="header-content">
           {/* Profile Picture */}
@@ -96,7 +96,7 @@ const App: React.FC = () => {
         </nav>
       </header>
 
-      {/* Main Content Area - Renders the selected tab content */}
+      {/* Main Content Area • Renders the selected tab content */}
       <main className="main-content">
         {renderContent()}
       </main>

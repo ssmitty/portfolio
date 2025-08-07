@@ -10,11 +10,11 @@ import './Experience.css';
  * of technical skills in a professional setting.
  * 
  * Features:
- * - Professional experience timeline
- * - Technology stack for each role
- * - Detailed achievements and project descriptions
- * - Performance metrics and quantitative results
- * - Responsive design for organized information display
+ * • Professional experience timeline
+ * • Technology stack for each role
+ * • Detailed achievements and project descriptions
+ * • Performance metrics and quantitative results
+ * • Responsive design for organized information display
  * 
  * @component
  * @returns {JSX.Element} The experience section with professional details
@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
       <div className="experience-card">
         {/* Experience header with title and metadata */}
         <div className="experience-header">
-          <h3>D2.ai - Data Engineer Internship</h3>
+          <h3>D2.ai • Data Engineer Internship</h3>
           {/* Location and duration metadata */}
           <div className="experience-meta">
             <span className="location">Long Beach Island, NJ</span>
