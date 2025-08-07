@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import PrepU from './components/PrepU';
 
 /**
  * Main App Component
@@ -44,6 +45,8 @@ const App: React.FC = () => {
         return <Experience />;
       case 'projects':
         return <Projects />;
+      case 'prep-u':
+        return <PrepU />;
       default:
         return <About />;
     }
@@ -83,6 +86,12 @@ const App: React.FC = () => {
             onClick={() => handleTabChange('projects')}
           >
             Projects
+          </button>
+          <button
+            className={`nav-button ${activeTab === 'prep-u' ? 'active' : ''}`}
+            onClick={() => handleTabChange('prep-u')}
+          >
+            Prep U
           </button>
         </nav>
       </header>

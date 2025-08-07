@@ -90,6 +90,14 @@ const About: React.FC = () => {
                 <a href="mailto:ssmitty@udel.edu" className="contact-link">ssmitty@udel.edu</a>
               </div>
               
+              {/* GitHub profile */}
+              <div className="contact-item">
+                <span className="contact-label">GitHub:</span>
+                <a href="https://github.com/ssmitty" target="_blank" rel="noopener noreferrer" className="contact-link">
+                  github.com/ssmitty
+                </a>
+              </div>
+              
               {/* LinkedIn profile */}
               <div className="contact-item">
                 <span className="contact-label">LinkedIn:</span>
@@ -97,6 +105,11 @@ const About: React.FC = () => {
                   linkedin.com/in/sean-matthew-smith
                 </a>
               </div>
+            </div>
+            
+            {/* Note about repository privacy */}
+            <div className="privacy-note">
+              <p><em>Note: Some repositories may not be publicly visible due to privacy concerns or ongoing development.</em></p>
             </div>
           </div>
         </div>

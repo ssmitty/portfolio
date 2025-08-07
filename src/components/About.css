@@ -126,6 +126,34 @@
   text-decoration: underline; /* Underline on hover */
 }
 
+/* Individual highlight items */
+.contact-highlights span {
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.9rem; /* Slightly smaller font */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+/* ==========================================================================
+   Privacy Note Styles
+   ========================================================================== */
+
+/* Privacy note container */
+.privacy-note {
+  margin-top: 1.5rem; /* Space above note */
+  padding: 1rem; /* Internal padding */
+  background: #f8f9fa; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  border-left: 3px solid var(--ud-blue); /* Blue accent border */
+}
+
+/* Privacy note text */
+.privacy-note p {
+  color: var(--text-light); /* Light text for secondary information */
+  font-size: 0.9rem; /* Smaller font size */
+  margin: 0; /* Remove default margin */
+  line-height: 1.4; /* Comfortable line spacing */
+}
+
 /* ==========================================================================
    Coursework Grid Styles
    ========================================================================== */

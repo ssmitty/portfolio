@@ -1,0 +1,337 @@
+/* ==========================================================================
+   PrepU Component Styles
+   ========================================================================== */
+
+/* Main PrepU container */
+.prep-u {
+  padding: 1rem 0; /* Vertical padding for spacing */
+}
+
+/* ==========================================================================
+   Header Section Styles
+   ========================================================================== */
+
+/* Main header section */
+.prep-u-header {
+  text-align: center; /* Center alignment */
+  margin-bottom: 2rem; /* Space below header */
+}
+
+/* Main title styling */
+.prep-u-header h2 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 2.2rem; /* Large, prominent font size */
+  margin-bottom: 1rem; /* Space below title */
+  font-weight: 700; /* Bold for emphasis */
+}
+
+/* Mission statement styling */
+.mission-statement {
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 1.1rem; /* Standard font size */
+  line-height: 1.6; /* Comfortable line spacing */
+  max-width: 800px; /* Maximum width for readability */
+  margin: 0 auto; /* Center the text */
+  font-style: italic; /* Italic for emphasis */
+}
+
+/* ==========================================================================
+   Availability Card Styles
+   ========================================================================== */
+
+/* Availability card container */
+.availability-card {
+  background: linear-gradient(135deg, var(--ud-blue) 0%, #004080 100%); /* UD blue gradient */
+  color: var(--ud-gold); /* UD gold text */
+  padding: 2rem; /* Internal spacing */
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 2rem; /* Space below card */
+  text-align: center; /* Center alignment */
+  box-shadow: var(--shadow); /* Depth with shadow */
+}
+
+/* Availability title */
+.availability-card h3 {
+  font-size: 1.4rem; /* Large font size */
+  margin-bottom: 1rem; /* Space below title */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Availability details container */
+.availability-details {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 0.5rem; /* Space between items */
+  align-items: center; /* Center items */
+}
+
+/* Individual availability items */
+.availability-details span {
+  font-size: 1rem; /* Standard font size */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+/* ==========================================================================
+   Skills Grid Styles
+   ========================================================================== */
+
+/* Skills grid container */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between skill cards */
+  margin-bottom: 2rem; /* Space below grid */
+}
+
+/* ==========================================================================
+   Skill Card Styles
+   ========================================================================== */
+
+/* Individual skill card */
+.skill-card {
+  background: var(--white); /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Internal spacing */
+  box-shadow: var(--shadow); /* Depth with shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  border-left: 4px solid var(--ud-gold); /* Gold accent border */
+}
+
+/* Hover effect for skill cards */
+.skill-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+}
+
+/* Skill card title */
+.skill-card h3 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.3rem; /* Large font size */
+  margin-bottom: 1rem; /* Space below title */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* ==========================================================================
+   Skill Content Styles
+   ========================================================================== */
+
+/* Skill content container */
+.skill-content {
+  margin-top: 1rem; /* Space above content */
+}
+
+/* Experience header */
+.skill-content h4 {
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-size: 1rem; /* Standard font size */
+  margin-bottom: 0.75rem; /* Space below header */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Experience list */
+.skill-content ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 1rem; /* Space below list */
+}
+
+/* Individual experience items */
+.skill-content li {
+  padding: 0.5rem 0; /* Vertical spacing between items */
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.95rem; /* Standard font size */
+  line-height: 1.4; /* Comfortable line spacing */
+  position: relative; /* For positioning custom bullet */
+  padding-left: 1.5rem; /* Indent for custom bullet */
+}
+
+/* Custom bullet points for experience lists */
+.skill-content li:before {
+  content: "▸"; /* Custom bullet character */
+  position: absolute; /* Position relative to list item */
+  left: 0; /* Align to left edge */
+  color: var(--ud-blue); /* UD blue for consistency */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* ==========================================================================
+   Tech Highlights Styles
+   ========================================================================== */
+
+/* Tech highlights container */
+.tech-highlights {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap to new lines */
+  gap: 0.5rem; /* Space between technology tags */
+  margin-top: 1rem; /* Space above highlights */
+}
+
+/* Individual tech tag styling */
+.tech-tag {
+  background: var(--ud-blue); /* UD blue background */
+  color: var(--ud-gold); /* UD gold text */
+  padding: 0.25rem 0.75rem; /* Comfortable padding */
+  border-radius: 20px; /* Rounded pill shape */
+  font-size: 0.8rem; /* Small, readable font */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* ==========================================================================
+   Application Section Styles
+   ========================================================================== */
+
+/* Application section container */
+.application-section {
+  background: var(--bg-light); /* Light background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Internal spacing */
+  margin-top: 2rem; /* Space above section */
+  box-shadow: var(--shadow); /* Depth with shadow */
+}
+
+/* Application section title */
+.application-section h3 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.5rem; /* Large font size */
+  margin-bottom: 1.5rem; /* Space below title */
+  text-align: center; /* Center alignment */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Application content container */
+.application-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 2rem; /* Space between columns */
+  align-items: start; /* Align items to top */
+}
+
+/* ==========================================================================
+   Contact Info Styles
+   ========================================================================== */
+
+/* Contact info container */
+.contact-info h4 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.2rem; /* Medium font size */
+  margin-bottom: 1rem; /* Space below header */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Contact details container */
+.contact-details {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 0.75rem; /* Space between contact items */
+}
+
+/* Individual contact item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between label and link */
+}
+
+/* Contact label styling */
+.contact-label {
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: var(--ud-blue); /* UD blue for consistency */
+  min-width: 80px; /* Fixed width for alignment */
+  font-size: 0.95rem;
+}
+
+/* Contact link styling */
+.contact-link {
+  color: var(--text-dark); /* Dark text for readability */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.95rem;
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Hover effect for contact links */
+.contact-link:hover {
+  color: var(--ud-blue); /* UD blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* ==========================================================================
+   Key Highlights Styles
+   ========================================================================== */
+
+/* Key highlights container */
+.key-highlights h4 {
+  color: var(--ud-blue); /* UD blue for emphasis */
+  font-size: 1.2rem; /* Medium font size */
+  margin-bottom: 1rem; /* Space below header */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+/* Key highlights list */
+.key-highlights ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual highlight items */
+.key-highlights li {
+  padding: 0.5rem 0; /* Vertical spacing between items */
+  color: var(--text-dark); /* Dark text for readability */
+  font-size: 0.95rem; /* Standard font size */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+/* ==========================================================================
+   Responsive Design - Mobile Styles
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Smaller header title for mobile */
+  .prep-u-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Smaller mission statement for mobile */
+  .mission-statement {
+    font-size: 1rem;
+  }
+  
+  /* Single column layout for skills grid on mobile */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Reduced padding for skill cards on mobile */
+  .skill-card {
+    padding: 1.5rem;
+  }
+  
+  /* Single column layout for application content on mobile */
+  .application-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Reduced padding for application section on mobile */
+  .application-section {
+    padding: 1.5rem;
+  }
+  
+  /* Stack contact items vertically on mobile */
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  /* Remove fixed width for mobile contact labels */
+  .contact-label {
+    min-width: auto;
+  }
+  
+  /* Smaller tech tags for mobile */
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+} 
