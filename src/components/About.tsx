@@ -33,7 +33,7 @@ const About: React.FC = () => {
             {/* University and degree information */}
             <h3>University of Delaware</h3>
             <p className="degree">Bachelor of Science in Computer Science, Minor in Mathematics</p>
-            <p className="gpa">Major GPA: 4.0 | Overall GPA: 3.93</p>
+            <p className="gpa">Major GPA: 4.0 | Overall GPA: 3.88</p>
             <p className="graduation">Expected Graduation: May 2027</p>
             
             {/* Relevant coursework section */}
@@ -47,10 +47,13 @@ const About: React.FC = () => {
                 <h5>Computer Science</h5>
                 <ul>
                   <li>Systems Programming</li>
+                  <li>Database Management Systems</li>
+                  <li>Operating Systems</li>
+                  <li>Algortihms</li>
+                  <li>Software Engineering</li>
                   <li>Machine Organization and Assembly Language</li>
                   <li>Data Structures</li>
                   <li>Computer Science I and II</li>
-                  <li>Intro to Software Engineering</li>
                 </ul>
               </div>
               
@@ -61,7 +64,7 @@ const About: React.FC = () => {
                   <li>Linear Algebra</li>
                   <li>Discrete Mathematics</li>
                   <li>Calculus II</li>
-                  <li>Probability and Statistics</li>
+                  <li>Probability Theoryand Statistical Methods</li>
                 </ul>
               </div>
             </div>
@@ -139,10 +142,13 @@ const About: React.FC = () => {
             
             {/* List of athletic achievements and accomplishments */}
             <ul className="achievements">
-              <li>Lead team to CAA Semi-Finals and first winning record since 2016</li>
-              <li>Played 1,000+ minutes during the season</li>
-              <li>Earned CAA Rookie of the Week honors (October 16 to 23, 2023)</li>
-              <li>Balance full course load with competition, practice, travel, and film study</li>
+              <li>2025 Summit League Championship All-Tournament team</li>
+              <li>2025 CSC Academic All-District </li>
+              <li>Earned CAA Rookie of the Week honors</li>
+              <li>Earned Summit League Defensive Player of the Week nom honors </li>
+              <li>Junior year: 16 appearances and 16 starts on the season</li>
+              <li>Freshman year: 19 appearances and 16 starts on the season</li>
+              <li>Balance full course load with competition, internship, practice, travel, and film study</li>
             </ul>
           </div>
         </div>

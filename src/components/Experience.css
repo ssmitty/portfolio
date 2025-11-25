@@ -21,6 +21,8 @@
   border-radius: 12px; /* Rounded corners */
   padding: 2rem; /* Internal spacing */
   box-shadow: var(--shadow); /* Depth with shadow */
+    margin-bottom: 2rem; /* Space below each experience card */
+
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
 }
 
@@ -28,6 +30,11 @@
 .experience-card:hover {
   transform: translateY(-2px); /* Slight lift on hover */
   box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+  margin-bottom: 2rem; /* Space below each experience card on hover */
+
+}
+.experience-card-wrapper {
+  margin: 2rem 0;
 }
 
 

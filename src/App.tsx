@@ -91,7 +91,7 @@ const App: React.FC = () => {
             className={`nav-button ${activeTab === 'prep-u' ? 'active' : ''}`}
             onClick={() => handleTabChange('prep-u')}
           >
-            Prep U
+            Wodify
           </button>
         </nav>
       </header>

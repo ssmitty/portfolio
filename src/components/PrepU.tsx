@@ -22,20 +22,17 @@ const PrepU: React.FC = () => {
     <div className="prep-u">
       {/* Main header section */}
       <div className="prep-u-header">
-        <h2>Prep U Data Science Internship</h2>
+        <h2>Wodify's Data Science/SWE Internship</h2>
         <p className="mission-statement">
-          Aligning my technical expertise and student-athlete background with Prep U's mission 
-          to help student-athletes build careers beyond sports.
+          Aligning my technical expertise with Wodify
         </p>
       </div>
 
       {/* Availability section */}
       <div className="availability-card">
-        <h3>Available for Fall 2025 Internship</h3>
+        <h3>Available for Summer 2026 Internship</h3>
         <div className="availability-details">
-          <span>• August to December 2025</span>
-          <span>• Part-Time (Flexible Schedule)</span>
-          <span>• Remote (U.S.-based)</span>
+          <span>• May to August 2026</span>
           <span>• 4.0 Major GPA in Computer Science</span>
         </div>
       </div>
@@ -50,9 +47,9 @@ const PrepU: React.FC = () => {
             <h4>Experience:</h4>
             <ul>
               <li>OpenAI API integration in twang.ai and Ticker Matcher projects</li>
-              <li>Fine-tuned language models for personalized content generation</li>
+              <li>Fine tuned language models for personalized content generation</li>
               <li>Prompt engineering for optimal AI responses</li>
-              <li>Real-time AI chat features and recommendation systems</li>
+              <li>Real time AI chat features and recommendation systems</li>
             </ul>
             <div className="tech-highlights">
               <span className="tech-tag">OpenAI GPT-4</span>
@@ -71,7 +68,7 @@ const PrepU: React.FC = () => {
               <li>Achieved 95.3% F1 score in entity resolution system at D2.ai</li>
               <li>Analyzed 10,000+ test cases for performance evaluation</li>
               <li>User behavior analysis and platform data insights</li>
-              <li>Data-driven improvements for user experience</li>
+              <li>Data driven improvements for user experience</li>
             </ul>
             <div className="tech-highlights">
               <span className="tech-tag">Python</span>
@@ -89,7 +86,7 @@ const PrepU: React.FC = () => {
             <h4>Experience:</h4>
             <ul>
               <li>Built regression models (XGBoost, Lasso) with R² = 0.741 ± 0.004</li>
-              <li>Cross-validation and SHAP values for feature attribution</li>
+              <li>Cross validation and SHAP values for feature attribution</li>
               <li>Machine learning models for user engagement</li>
               <li>Personalized recommendation systems</li>
             </ul>
@@ -124,14 +121,14 @@ const PrepU: React.FC = () => {
 
         {/* Full-Stack Development */}
         <div className="skill-card">
-          <h3>Full-Stack Development</h3>
+          <h3>Full Stack Development</h3>
           <div className="skill-content">
             <h4>Experience:</h4>
             <ul>
               <li>Deployed multiple projects using Node.js, React, and modern frameworks</li>
               <li>Database management and API integration</li>
               <li>Modern web frameworks and responsive design</li>
-              <li>End-to-end solution development</li>
+              <li>End to end solution development</li>
             </ul>
             <div className="tech-highlights">
               <span className="tech-tag">React</span>
@@ -144,7 +141,7 @@ const PrepU: React.FC = () => {
 
         {/* Student-Athlete Perspective */}
         <div className="skill-card">
-          <h3>Student-Athlete Leadership</h3>
+          <h3>Student Athlete Leadership</h3>
           <div className="skill-content">
             <h4>Experience:</h4>
             <ul>
@@ -165,15 +162,15 @@ const PrepU: React.FC = () => {
 
       {/* Application section */}
       <div className="application-section">
-        <h3>Ready to Contribute to Prep U's Mission</h3>
+        <h3>Ready to Contribute to Wodify's Mission</h3>
         <div className="key-highlights">
           <h4>Key Highlights</h4>
           <ul>
             <li>4.0 Major GPA in Computer Science</li>
-            <li>Real-world AI/ML project experience</li>
-            <li>Student-athlete leadership background</li>
+            <li>Real world AI/ML project experience</li>
+            <li>Student athlete leadership background</li>
             <li>Remote work ready and flexible schedule</li>
-            <li>Experience with cutting-edge AI tools and cloud infrastructure</li>
+            <li>Experience with cutting edge AI tools and cloud infrastructure</li>
           </ul>
         </div>
       </div>

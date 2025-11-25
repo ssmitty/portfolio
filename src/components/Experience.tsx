@@ -75,18 +75,60 @@ const Experience: React.FC = () => {
               
               {/* Regression Models Project */}
               <li>
-                <strong>Regression Models:</strong> Built and validated regression models (e.g., XGBoost, Lasso, Hybrid) with R² = 0.741 ± 0.004, cross-validation, and SHAP values to quantify per-feature contributions over time
+                <strong>Regression Models:</strong> Built and validated regression models (e.g., XGBoost, Lasso, Hybrid) with R² = 0.741 ± 0.004, cross validation, and SHAP values to quantify perfeature contributions over time
               </li>
               
               {/* Data Visualization Project */}
               <li>
-                <strong>Data Visualization:</strong> Created time-series dashboards and feature attribution visualizations to track evolving model behavior
+                <strong>Data Visualization:</strong> Created time series dashboards and feature attribution visualizations to track evolving model behavior
               </li>
             </ul>
           </div>
         </div>
       </div>
+      {/* ======================= Prepu Card ======================= */}
+<div className="experience-card">
+  <div className="experience-header">
+    <h3>PrepU Data Engineering Internship</h3>
+    <div className="experience-meta">
+      <span className="location">Remote</span>
+      <span className="duration">Aug 2025 – Present</span>
     </div>
+  </div>
+
+  <div className="experience-content">
+    <div className="tech-stack">
+      <span className="tech-tag">React</span>
+      <span className="tech-tag">TypeScript</span>
+      <span className="tech-tag">OpenAI API</span>
+      <span className="tech-tag">AWS Lambda</span>
+      <span className="tech-tag">DynamoDB</span>
+      <span className="tech-tag">Node.js</span>
+    </div>
+
+    <div className="achievements">
+      <h4>Key Achievements</h4>
+      <ul>
+        <li>
+          <strong>AI Driven Assessment Feedback:</strong> Integrated OpenAI to automatically generate personalized assessment feedback triggered immediately upon completion of each student assessment, ensuring timely and actionable guidance.
+        </li>
+        <li>
+          <strong>DynamoDB and Codebase Refactor:</strong> Refactored DynamoDB schemas and modularized backend services, improving maintainability, reducing query latency, and simplifying feature development for the platform.
+        </li>
+        <li>
+          <strong>AWS Lambda Stream Pipeline:</strong> Built a DynamoDB Stream to Lambda workflow that automatically detects assessment completion events and triggers real time OpenAI feedback generation, enabling fully automated response pipelines.
+        </li>
+        <li>
+          <strong>Work Athletics Balance:</strong> Successfully completed the internship while competing in collegiate soccer during the Fall 2025 season, demonstrating strong time management and multitasking skills.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        
+    </div>
+
   );
 };
 

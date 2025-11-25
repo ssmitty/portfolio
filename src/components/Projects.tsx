@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
               <span className="tech-tag">AWS EC2</span>
               <span className="tech-tag">Load Balancer</span>
               <span className="tech-tag">Docker</span>
-              <span className="tech-tag">Scikit-learn</span>
+              <span className="tech-tag">Scikit learn</span>
             </div>
           </div>
           
@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
               <li>Deployed on AWS EC2 with load balancer for scalability and high availability</li>
               <li>Achieved 95.3% F1 score for company name retrieval</li>
               <li>Handles two-word user input with high precision and recall</li>
-              <li>Real-time API responses for efficient data retrieval</li>
+              <li>Real time API responses for efficient data retrieval</li>
             </ul>
           </div>
         </div>
@@ -112,16 +112,16 @@ const Projects: React.FC = () => {
           <div className="project-content">
             {/* Project description */}
             <p className="project-description">
-              AI-powered country music lyric generator that creates personalized country songs based on user preferences through an interactive quiz system.
+              AI powered country music lyric generator that creates personalized country songs based on user preferences through an interactive quiz system.
             </p>
             
             {/* List of project features and achievements */}
             <ul className="project-features">
               <li>Interactive quiz system for mood, speed, tempo, theme, and story preferences</li>
-              <li>AI-powered lyric generation using custom API endpoints</li>
+              <li>AI powered lyric generation using custom API endpoints</li>
               <li>Modern responsive design with seamless navigation between pages</li>
               <li>Deployed on GitHub Pages with proper routing and static export</li>
-              <li>Real-time form processing and dynamic results display</li>
+              <li>Real time form processing and dynamic results display</li>
             </ul>
             
 
@@ -161,12 +161,12 @@ const Projects: React.FC = () => {
           <div className="project-content">
             {/* Project description */}
             <p className="project-description">
-              Career assessment app featuring multiple-choice and open-response assessments to help users discover ideal career paths.
+              Career assessment app featuring multiple choice and open response assessments to help users discover ideal career paths.
             </p>
             
             {/* List of project features and achievements */}
             <ul className="project-features">
-              <li>Real-time AI-powered career advice using GPT-4 API</li>
+              <li>Real time AI powered career advice using GPT 4 API</li>
               <li>Progress tracking and confetti celebration on completion</li>
               <li>Dynamic results pages with light/dark mode</li>
               <li>Secure API key management</li>
