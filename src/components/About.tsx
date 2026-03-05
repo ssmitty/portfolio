@@ -31,10 +31,16 @@ const About: React.FC = () => {
           {/* Content card containing academic information */}
           <div className="content-card">
             {/* University and degree information */}
-            <h3>University of Delaware</h3>
+            <h3>University of Delaware  College of Engineering</h3>
             <p className="degree">Bachelor of Science in Computer Science, Minor in Mathematics</p>
-            <p className="gpa">Major GPA: 4.0 | Overall GPA: 3.88</p>
-            <p className="graduation">Expected Graduation: May 2027</p>
+            <p className="gpa">Cumulative GPA: 3.91 | Major GPA: 4.0</p>
+            <p className="graduation">Newark, DE Expected Graduation: May 2027</p>
+            
+            {/* Technical skills summary */}
+            <h4>Technical Skills</h4>
+            <p className="skills-summary">
+              Advanced in Python (pandas, NumPy, scikit-learn, matplotlib, seaborn). Proficient in model selection and evaluation (precision, recall, F1, ROC-AUC), AWS, PostgreSQL, JavaScript, C, CSS, SQL, React, Node.js.
+            </p>
             
             {/* Relevant coursework section */}
             <h4>Relevant Coursework</h4>
@@ -46,14 +52,18 @@ const About: React.FC = () => {
               <div className="course-category">
                 <h5>Computer Science</h5>
                 <ul>
-                  <li>Systems Programming</li>
-                  <li>Database Management Systems</li>
+                  <li>Algorithms</li>
+                  <li>Data Mining</li>
+                  <li>Automata Theory</li>
+                  <li>Logic for Programming</li>
                   <li>Operating Systems</li>
-                  <li>Algortihms</li>
+                  <li>Computer Vision</li>
                   <li>Software Engineering</li>
-                  <li>Machine Organization and Assembly Language</li>
+                  <li>Machine Organization & Assembly Language</li>
                   <li>Data Structures</li>
-                  <li>Computer Science I and II</li>
+                  <li>Database Systems</li>
+                  <li>Systems Programming</li>
+                  
                 </ul>
               </div>
               
@@ -61,10 +71,12 @@ const About: React.FC = () => {
               <div className="course-category">
                 <h5>Mathematics</h5>
                 <ul>
+                  <li>Computational Math</li>
                   <li>Linear Algebra</li>
                   <li>Discrete Mathematics</li>
-                  <li>Calculus II</li>
-                  <li>Probability Theoryand Statistical Methods</li>
+                  <li>Probability Theory & Statistical Methods</li>
+                  <li>Calculus 2</li>
+                  
                 </ul>
               </div>
             </div>
@@ -122,7 +134,7 @@ const About: React.FC = () => {
           <div className="content-card">
             {/* Soccer team and position information */}
             <h3>University of Delaware Division I Men's Soccer</h3>
-            <p className="position">Center Back | August 2023 to Present</p>
+            <p className="position">Defender | July 2023 - Present</p>
             
             {/* Container for athletic images */}
             <div className="athletics-images">
@@ -142,13 +154,9 @@ const About: React.FC = () => {
             
             {/* List of athletic achievements and accomplishments */}
             <ul className="achievements">
-              <li>2025 Summit League Championship All-Tournament team</li>
-              <li>2025 CSC Academic All-District </li>
-              <li>Earned CAA Rookie of the Week honors</li>
-              <li>Earned Summit League Defensive Player of the Week nom honors </li>
-              <li>Junior year: 16 appearances and 16 starts on the season</li>
-              <li>Freshman year: 19 appearances and 16 starts on the season</li>
-              <li>Balance full course load with competition, internship, practice, travel, and film study</li>
+              <li>2025 Summit League Championship All-Tournament Team – Awarded to the top 11 players in postseason</li>
+              <li>2025 CSC Academic All-District honors – Player must have above a 3.5 cum GPA and start in 2/3 of games</li>
+              <li>Named CAA Rookie of the Week (10/23/23) and made 19 appearances with 16 starts in first season</li>
             </ul>
           </div>
         </div>

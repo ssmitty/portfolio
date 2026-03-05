@@ -63,7 +63,7 @@ const App: React.FC = () => {
           {/* Name and Title */}
           <div className="header-text">
             <h1>Sean Smith</h1>
-            <p>Computer Science Student & Division I Soccer Player</p>
+            <p>Division I Student Athlete  609-815-0282  linkedin.com/in/sean-matthew-smith</p>
           </div>
         </div>
 

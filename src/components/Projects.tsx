@@ -161,16 +161,15 @@ const Projects: React.FC = () => {
           <div className="project-content">
             {/* Project description */}
             <p className="project-description">
-              Career assessment app featuring multiple choice and open response assessments to help users discover ideal career paths.
+              “The Pink Path” features both basic multiple choice and detailed open response assessments. Users discover ideal career paths based on their skills, preferences, and goals after filling out the assessment.
             </p>
             
             {/* List of project features and achievements */}
             <ul className="project-features">
-              <li>Real time AI powered career advice using GPT 4 API</li>
+              <li>Integrated real time AI powered career advice by connecting user responses to OpenAI’s GPT-4 API</li>
+              <li>Dynamic results pages, secure API key management, light/dark mode, and PDF capability</li>
               <li>Progress tracking and confetti celebration on completion</li>
-              <li>Dynamic results pages with light/dark mode</li>
-              <li>Secure API key management</li>
-              <li>Interactive assessment flow with multiple question types</li>
+              <li>TypeScript and HTML  March 2025 - May 2025</li>
             </ul>
             
             {/* Demo link section for live project access */}

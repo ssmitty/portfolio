@@ -73,6 +73,15 @@
   font-size: 1rem; /* Standard font size */
 }
 
+/* Technical skills paragraph – match body font (avoid monospace/code font) */
+.skills-summary {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
 /* GPA styling with emphasis */
 .gpa {
   font-weight: 600; /* Semi-bold for emphasis */
