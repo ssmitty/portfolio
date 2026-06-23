@@ -56,6 +56,18 @@ const Projects: React.FC = () => {
               <li>Added Open-Meteo weather context and optional OpenAI-generated surf reports</li>
               <li>Built June 2026</li>
             </ul>
+
+            {/* Demo link section for live project access */}
+            <div className="project-links">
+              <a
+                href="https://ssmitty.github.io/wave-tracker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="demo-link"
+              >
+                Try Demo →
+              </a>
+            </div>
           </div>
         </div>
 

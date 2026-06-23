@@ -85,8 +85,10 @@ const About: React.FC = () => {
                   <li>Linear Algebra</li>
                   <li>Discrete Mathematics</li>
                   <li>Probability Theory & Statistical Methods</li>
-                  <li>Calculus 2</li>
-                  
+                  <li>Calculus 3</li>
+                  <li>Differential Equations</li>
+                  <li>Introduction to Proof</li>
+                  <li>Math Techniques in Data Science</li>
                 </ul>
               </div>
             </div>
