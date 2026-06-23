@@ -3,6 +3,14 @@ import './App.css';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import headerBg from './assets/header-bg.png';
+
+// Translucent blue overlay layered over the beach photo so header text stays readable
+const headerStyle: React.CSSProperties = {
+  backgroundImage: `linear-gradient(135deg, rgba(0, 83, 155, 0.72) 0%, rgba(1, 58, 99, 0.82) 100%), url(${headerBg})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+};
 
 /**
  * Map each navigation tab to its background song.
@@ -125,7 +133,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       {/* Header Section */}
-      <header className="header">
+      <header className="header" style={headerStyle}>
         {/* Sound toggle in the top corner */}
         <button
           className="sound-toggle"

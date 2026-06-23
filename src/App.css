@@ -6,12 +6,12 @@
   background-color: var(--bg-light); /* Light background for better readability */
 }
 
-/* Main header with gradient background */
+/* Main header with photo background and translucent blue overlay (set inline in App.tsx) */
 .header {
   position: relative; /* Anchor for the absolutely positioned sound toggle */
-  background: linear-gradient(135deg, var(--ud-blue) 0%, var(--ud-blue-dark) 100%); /* Clean blue gradient */
+  background-color: var(--ud-blue); /* Solid blue fallback if the image fails to load */
   color: #ffffff; /* Crisp white text */
-  padding: 3.5rem 1rem 2rem; /* Generous vertical padding */
+  padding: 4rem 1rem 2.5rem; /* Generous vertical padding for the photo backdrop */
   text-align: center; /* Center all header content */
   box-shadow: var(--shadow); /* Add depth with shadow */
 }
