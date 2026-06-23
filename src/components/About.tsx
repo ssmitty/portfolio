@@ -31,17 +31,27 @@ const About: React.FC = () => {
           {/* Content card containing academic information */}
           <div className="content-card">
             {/* University and degree information */}
-            <h3>University of Delaware  College of Engineering</h3>
-            <p className="degree">Bachelor of Science in Computer Science, Minor in Mathematics</p>
+            <h3>University of Delaware</h3>
+            <p className="degree">B.S. Computer Science and B.S. Mathematics | Aug 2023 to May 2027</p>
+            <p className="degree">M.S. Applied Mathematics | Beginning Aug 2027</p>
             <p className="gpa">Cumulative GPA: 3.91 | Major GPA: 4.0</p>
-            <p className="graduation">Newark, DE Expected Graduation: May 2027</p>
-            
+            <p className="graduation">Newark, DE</p>
+
             {/* Technical skills summary */}
             <h4>Technical Skills</h4>
-            <p className="skills-summary">
-              Advanced in Python (pandas, NumPy, scikit-learn, matplotlib, seaborn). Proficient in model selection and evaluation (precision, recall, F1, ROC-AUC), AWS, PostgreSQL, JavaScript, C, CSS, SQL, React, Node.js.
-            </p>
-            
+            <div className="skills-list">
+              <p className="skills-group"><span className="skills-label">Languages:</span> Python, JavaScript, C, C++, SQL</p>
+              <p className="skills-group"><span className="skills-label">Platforms and Cloud:</span> AWS, OutSystems</p>
+              <p className="skills-group"><span className="skills-label">Methods:</span> Model Selection, Model Evaluation, Data Modeling, Web REST</p>
+            </div>
+
+            {/* Certifications section */}
+            <h4>Certifications</h4>
+            <p className="cert-title">Associate Developer O11, OutSystems | June 2026</p>
+            <ul className="cert-details">
+              <li>Reactive web development, data modeling, server-side logic, and application lifecycle management</li>
+            </ul>
+
             {/* Relevant coursework section */}
             <h4>Relevant Coursework</h4>
             
@@ -134,7 +144,7 @@ const About: React.FC = () => {
           <div className="content-card">
             {/* Soccer team and position information */}
             <h3>University of Delaware Division I Men's Soccer</h3>
-            <p className="position">Defender | July 2023 - Present</p>
+            <p className="position">Defender | July 2023 to Present</p>
             
             {/* Container for athletic images */}
             <div className="athletics-images">
@@ -154,8 +164,8 @@ const About: React.FC = () => {
             
             {/* List of athletic achievements and accomplishments */}
             <ul className="achievements">
-              <li>2025 Summit League Championship All-Tournament Team – Awarded to the top 11 players in postseason</li>
-              <li>2025 CSC Academic All-District honors – Player must have above a 3.5 cum GPA and start in 2/3 of games</li>
+              <li>2025 Summit League Championship All-Tournament Team, awarded to the top 11 players in the postseason</li>
+              <li>2025 CSC Academic All-District honors, requiring above a 3.5 cumulative GPA and starting in two-thirds of games</li>
               <li>Named CAA Rookie of the Week (10/23/23) and made 19 appearances with 16 starts in first season</li>
             </ul>
           </div>

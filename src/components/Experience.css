@@ -18,10 +18,11 @@
 /* Main experience card container */
 .experience-card {
   background: var(--white); /* White background */
+  border: 1px solid var(--border); /* Subtle border for definition */
   border-radius: 12px; /* Rounded corners */
   padding: 2rem; /* Internal spacing */
   box-shadow: var(--shadow); /* Depth with shadow */
-    margin-bottom: 2rem; /* Space below each experience card */
+    margin-bottom: 1.5rem; /* Space below each experience card */
 
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
 }
@@ -80,12 +81,13 @@
 
 /* Individual technology tag styling */
 .tech-tag {
-  background: var(--ud-blue); /* UD blue background */
-  color: var(--ud-gold); /* UD gold text */
-  padding: 0.25rem 0.75rem; /* Comfortable padding */
-  border-radius: 20px; /* Rounded pill shape */
+  background: var(--ud-blue-light); /* Soft blue background */
+  color: var(--ud-blue); /* Blue text for a clean, modern look */
+  padding: 0.3rem 0.8rem; /* Comfortable padding */
+  border-radius: 6px; /* Refined corners */
   font-size: 0.8rem; /* Small, readable font */
-  font-weight: bold; /* Bold for emphasis */
+  font-weight: 600; /* Semi-bold for emphasis */
+  border: 1px solid rgba(0, 83, 155, 0.12); /* Subtle blue outline */
 }
 
 

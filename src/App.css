@@ -8,9 +8,9 @@
 
 /* Main header with gradient background */
 .header {
-  background: linear-gradient(135deg, var(--ud-blue) 0%, #004080 100%); /* UD blue gradient */
-  color: var(--ud-gold); /* UD gold text color */
-  padding: 2rem 0; /* Vertical padding for spacing */
+  background: linear-gradient(135deg, var(--ud-blue) 0%, var(--ud-blue-dark) 100%); /* Clean blue gradient */
+  color: #ffffff; /* Crisp white text */
+  padding: 3rem 1rem 2rem; /* Generous vertical padding */
   text-align: center; /* Center all header content */
   box-shadow: var(--shadow); /* Add depth with shadow */
 }
@@ -28,11 +28,11 @@
   width: 150px; /* Fixed width for consistency */
   height: 150px; /* Fixed height for consistency */
   border-radius: 50%; /* Circular shape */
-  border: 4px solid var(--ud-gold); /* UD gold border */
+  border: 3px solid rgba(255, 255, 255, 0.85); /* Subtle white ring */
   object-fit: cover; /* Maintain aspect ratio while filling container */
   object-position: center 15%; /* Focus on upper portion to show top of head */
-  margin-bottom: 1rem; /* Space below the image */
-  box-shadow: var(--shadow); /* Add depth */
+  margin-bottom: 1.25rem; /* Space below the image */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); /* Soft depth */
 }
 
 /* Name styling */
@@ -40,12 +40,16 @@
   font-size: 2.5rem; /* Large, prominent font size */
   margin-bottom: 0.5rem; /* Space between name and title */
   font-weight: 700; /* Bold weight for emphasis */
+  letter-spacing: -0.01em; /* Tighter, more refined heading */
 }
 
 /* Title/subtitle styling */
 .header-text p {
-  font-size: 1.1rem; /* Slightly larger than body text */
-  opacity: 0.9; /* Slightly transparent for hierarchy */
+  font-size: 1.05rem; /* Slightly larger than body text */
+  font-weight: 400; /* Regular weight for a clean subtitle */
+  color: rgba(255, 255, 255, 0.88); /* Soft white for hierarchy */
+  max-width: 640px; /* Constrain line length for readability */
+  margin: 0 auto; /* Center the subtitle */
 }
 
 
@@ -61,29 +65,28 @@
 /* Individual navigation button styling */
 .nav-button {
   background: transparent; /* Transparent background by default */
-  color: var(--ud-gold); /* UD gold text */
-  border: 2px solid var(--ud-gold); /* UD gold border */
-  padding: 0.75rem 1.5rem; /* Comfortable padding for clicking */
-  border-radius: 25px; /* Rounded corners */
-  font-size: 1rem; /* Readable font size */
-  font-weight: 600; /* Semi-bold for emphasis */
+  color: rgba(255, 255, 255, 0.92); /* Clean white text */
+  border: 1px solid rgba(255, 255, 255, 0.45); /* Subtle white outline */
+  padding: 0.6rem 1.4rem; /* Comfortable padding for clicking */
+  border-radius: 8px; /* Refined, less pill-like corners */
+  font-size: 0.95rem; /* Readable font size */
+  font-weight: 500; /* Medium weight for a cleaner look */
   cursor: pointer; /* Pointer cursor for interactivity */
-  transition: all 0.3s ease; /* Smooth transitions for all changes */
-  min-width: 120px; /* Minimum width for consistency */
+  transition: all 0.2s ease; /* Smooth transitions for all changes */
+  min-width: 110px; /* Minimum width for consistency */
 }
 
 /* Hover state for navigation buttons */
 .nav-button:hover {
-  background: var(--ud-gold); /* Fill with UD gold on hover */
-  color: var(--ud-blue); /* UD blue text on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
+  background: rgba(255, 255, 255, 0.12); /* Subtle fill on hover */
+  border-color: rgba(255, 255, 255, 0.8); /* Brighter outline on hover */
 }
 
 /* Active state for the currently selected tab */
 .nav-button.active {
-  background: var(--ud-gold); /* UD gold background */
-  color: var(--ud-blue); /* UD blue text */
+  background: #ffffff; /* White background */
+  color: var(--ud-blue); /* Blue text */
+  border-color: #ffffff; /* Match background */
   box-shadow: var(--shadow); /* Shadow for depth */
 }
 

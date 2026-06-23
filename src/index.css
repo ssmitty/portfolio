@@ -35,19 +35,26 @@ code {
 
 /* Root element for defining global CSS variables */
 :root {
-  /* University of Delaware Brand Colors */
-  --ud-blue: #00539B; /* Official UD blue color */
-  --ud-gold: #FFD100; /* Official UD gold color */
-  
+  /* Primary blue palette */
+  --ud-blue: #00539B; /* Primary brand blue */
+  --ud-blue-dark: #013a63; /* Deep blue for gradients and emphasis */
+  --ud-blue-light: #eaf2fb; /* Soft blue for subtle backgrounds and tags */
+
+  /* Neutral on-blue text color (replaces former gold accent) */
+  --ud-gold: #ffffff; /* Retained name for compatibility; now clean white on blue */
+
   /* Text Colors */
-  --text-dark: #333; /* Dark text for primary content */
-  --text-light: #666; /* Light text for secondary content */
-  
+  --text-dark: #1f2933; /* Primary content text */
+  --text-light: #5c6773; /* Secondary content text */
+
   /* Background Colors */
-  --bg-light: #f5f5f5; /* Light background for cards and sections */
-  --white: #ffffff; /* Pure white for card backgrounds */
-  
+  --bg-light: #f6f8fb; /* Page background */
+  --white: #ffffff; /* Card backgrounds */
+
+  /* Borders */
+  --border: #e3e8ef; /* Subtle card and divider borders */
+
   /* Shadow Effects */
-  --shadow: 0 2px 8px rgba(0,0,0,0.1); /* Standard shadow for depth */
-  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15); /* Enhanced shadow for hover effects */
+  --shadow: 0 1px 3px rgba(16, 42, 67, 0.08), 0 1px 2px rgba(16, 42, 67, 0.06); /* Soft, layered shadow */
+  --shadow-hover: 0 8px 24px rgba(16, 42, 67, 0.12); /* Elevated shadow for hover */
 } 

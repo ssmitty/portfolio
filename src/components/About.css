@@ -73,13 +73,57 @@
   font-size: 1rem; /* Standard font size */
 }
 
-/* Technical skills paragraph – match body font (avoid monospace/code font) */
-.skills-summary {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+/* Technical skills list container */
+.skills-list {
+  margin: 0 0 0.5rem 0;
+}
+
+/* Individual skill group line */
+.skills-group {
   color: var(--text-light);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
-  margin: 0 0 1rem 0;
+  margin-bottom: 0.4rem;
+}
+
+/* Bold label for each skill group */
+.skills-label {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+/* Certification title line */
+.cert-title {
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Certification detail list */
+.cert-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual certification detail item */
+.cert-details li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Custom bullet for certification details */
+.cert-details li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--ud-blue);
+  font-weight: bold;
 }
 
 /* GPA styling with emphasis */

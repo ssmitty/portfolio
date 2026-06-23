@@ -3,7 +3,6 @@ import './App.css';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import PrepU from './components/PrepU';
 
 /**
  * Main App Component
@@ -45,8 +44,6 @@ const App: React.FC = () => {
         return <Experience />;
       case 'projects':
         return <Projects />;
-      case 'prep-u':
-        return <PrepU />;
       default:
         return <About />;
     }
@@ -63,7 +60,7 @@ const App: React.FC = () => {
           {/* Name and Title */}
           <div className="header-text">
             <h1>Sean Smith</h1>
-            <p>Division I Student Athlete  609-815-0282  linkedin.com/in/sean-matthew-smith</p>
+            <p>B.S. Computer Science &amp; Mathematics, University of Delaware  |  Software Engineer  |  Division I Soccer Player</p>
           </div>
         </div>
 
@@ -86,12 +83,6 @@ const App: React.FC = () => {
             onClick={() => handleTabChange('projects')}
           >
             Projects
-          </button>
-          <button
-            className={`nav-button ${activeTab === 'prep-u' ? 'active' : ''}`}
-            onClick={() => handleTabChange('prep-u')}
-          >
-            Wodify
           </button>
         </nav>
       </header>

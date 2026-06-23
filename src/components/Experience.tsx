@@ -4,55 +4,80 @@ import './Experience.css';
 /**
  * Experience Component
  *
- * Displays Sean Smith's professional experience with role, duration, and key achievements.
+ * Displays Sean Smith's professional experience with role, company, duration,
+ * and key achievements, ordered from most to least recent.
  */
 const Experience: React.FC = () => {
   return (
     <div className="experience">
       <h2>Professional Experience</h2>
 
-      {/* D2.ai – Software Engineer (Jan–Feb 2026) */}
+      {/* Wodify - Software Engineer Intern (June 2026 - Present) */}
       <div className="experience-card">
         <div className="experience-header">
-          <h3>D2.ai - Software Engineer</h3>
+          <h3>Software Engineer Intern, Wodify</h3>
+          <div className="experience-meta">
+            <span className="location">Philadelphia, Hybrid</span>
+            <span className="duration">June 2026 - Present</span>
+          </div>
+        </div>
+        <div className="experience-content">
+          <div className="tech-stack">
+            <span className="tech-tag">OutSystems O11</span>
+            <span className="tech-tag">SQL</span>
+            <span className="tech-tag">Data Modeling</span>
+            <span className="tech-tag">4-Layer Canvas</span>
+            <span className="tech-tag">Web REST</span>
+          </div>
+          <div className="achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Designed the relational data model for a Milestones and Achievements feature in OutSystems O11, following 4-Layer Canvas architecture to improve module separation across a multi-module codebase</li>
+              <li>Built upsert server and service actions for milestone group management, applying correct module visibility patterns to enable clean consumption across orchestrator and business logic modules</li>
+              <li>Wrote injection-safe dynamic SQL queries to support real-time filtering by achievement type, status, and client visibility</li>
+              <li>Built a bootstrap process to backfill milestone progress for all existing gym members across Attendance, Weekly Streaks, and Gym Anniversary groups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* D2.ai - Software Engineer Intern (Dec 2025 - Feb 2026) */}
+      <div className="experience-card">
+        <div className="experience-header">
+          <h3>Software Engineer Intern, D2.ai</h3>
           <div className="experience-meta">
             <span className="location">Remote</span>
-            <span className="duration">January 2026 - February 2026</span>
+            <span className="duration">December 2025 - February 2026</span>
           </div>
         </div>
         <div className="experience-content">
           <div className="tech-stack">
             <span className="tech-tag">Python</span>
             <span className="tech-tag">Clustering</span>
-            <span className="tech-tag">Model Selection and Evaluation</span>
-            <span className="tech-tag">FastAPI</span>
-            <span className="tech-tag">Docker</span>
+            <span className="tech-tag">Model Evaluation</span>
             <span className="tech-tag">Data Engineering</span>
           </div>
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Optimized and tested CODA clustering pipeline for cyber insurance data</li>
-              <li>Developed metric dashboard for the CODA clustering pipeline</li>
-              <li>Reduced the bottleneck of the shape analysis phase by sampling the dataset while maintaining data coverage and reducing computational time</li>
+              <li>Reduced shape analysis bottleneck by sampling datasets while preserving coverage, improving processing efficiency for cyber insurance clustering models</li>
+              <li>Optimized and validated a clustering algorithm on cyber insurance data, increasing data reliability across the analysis pipeline</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* PrepU – Data Engineer (Aug–Dec 2025) */}
+      {/* Prep U - Data Engineer Intern (Aug 2025 - Nov 2025) */}
       <div className="experience-card">
         <div className="experience-header">
-          <h3>PrepU - Data Engineer</h3>
+          <h3>Data Engineer Intern, Prep U</h3>
           <div className="experience-meta">
             <span className="location">Remote</span>
-            <span className="duration">August 2025 - December 2025</span>
+            <span className="duration">August 2025 - November 2025</span>
           </div>
         </div>
         <div className="experience-content">
           <div className="tech-stack">
-            <span className="tech-tag">React</span>
-            <span className="tech-tag">TypeScript</span>
             <span className="tech-tag">OpenAI API</span>
             <span className="tech-tag">AWS Lambda</span>
             <span className="tech-tag">DynamoDB</span>
@@ -61,27 +86,21 @@ const Experience: React.FC = () => {
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>
-                Integrated OpenAI to automatically generate personalized assessment feedback triggered immediately upon completion of each student assessment, ensuring timely and actionable guidance
-              </li>
-              <li>
-                Refactored DynamoDB schemas and modularized backend services, improving maintainability, reducing query latency, and simplifying feature development for the platform
-              </li>
-              <li>
-                Created a DynamoDB Stream to Lambda workflow that automatically detects assessment completion events and triggers real-time OpenAI feedback generation, enabling fully automated response pipelines
-              </li>
+              <li>Decreased assessment feedback latency to near real-time by integrating OpenAI to auto-generate personalized guidance on student submission</li>
+              <li>Improved query performance and maintainability by refactoring DynamoDB schemas and modularizing backend services</li>
+              <li>Automated the feedback pipeline end-to-end by building a DynamoDB Stream to Lambda workflow that triggers OpenAI generation on assessment completion</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* D2.ai – Data Engineer (May–Aug 2025) */}
+      {/* D2.ai - Data Science Intern (June 2025 - July 2025) */}
       <div className="experience-card">
         <div className="experience-header">
-          <h3>D2.ai • Data Engineer</h3>
+          <h3>Data Science Intern, D2.ai</h3>
           <div className="experience-meta">
             <span className="location">Remote</span>
-            <span className="duration">May 2025 - August 2025</span>
+            <span className="duration">June 2025 - July 2025</span>
           </div>
         </div>
         <div className="experience-content">
@@ -89,16 +108,15 @@ const Experience: React.FC = () => {
             <span className="tech-tag">Python</span>
             <span className="tech-tag">AWS EC2</span>
             <span className="tech-tag">Load Balancer</span>
-            <span className="tech-tag">API</span>
-            <span className="tech-tag">SEC Filings</span>
+            <span className="tech-tag">Web REST</span>
+            <span className="tech-tag">Model Selection</span>
           </div>
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Developed and deployed an API to retrieve public company names (NASDAQ/NYSE) and SEC filings</li>
-              <li>Deployed on AWS EC2 with a load balancer to ensure scalability, security, and high availability</li>
-              <li>Evaluated performance across 10,000 test cases with 97.4% precision, 97.3% recall, and 95.5% F1 score, and 0.0206-second mean lookup speed</li>
-              <li>Constructed a mock insurance quote simulator to analyze the impact of 33 rating features on yearly pricing</li>
+              <li>Achieved 97.4% precision, 97.3% recall, and 95.5% F1 across 10,000 test cases by developing and deploying a public company lookup API for NASDAQ/NYSE and SEC filings</li>
+              <li>Ensured high availability and scalability by deploying the API on AWS EC2 with a load balancer</li>
+              <li>Quantified the impact of 33 rating features on yearly pricing by building a mock insurance quote simulator</li>
             </ul>
           </div>
         </div>

@@ -26,7 +26,39 @@ const Projects: React.FC = () => {
       
       {/* Grid container for organizing project cards */}
       <div className="projects-grid">
-        
+
+        {/* Wave Tracker Project Card */}
+        <div className="project-card">
+          {/* Project header with title and technology stack */}
+          <div className="project-header">
+            <h3>Wave Tracker</h3>
+            {/* Technology stack tags */}
+            <div className="tech-stack">
+              <span className="tech-tag">Streamlit</span>
+              <span className="tech-tag">OpenCV</span>
+              <span className="tech-tag">Python</span>
+              <span className="tech-tag">Open-Meteo API</span>
+              <span className="tech-tag">OpenAI API</span>
+            </div>
+          </div>
+
+          {/* Project content with description and features */}
+          <div className="project-content">
+            {/* Project description */}
+            <p className="project-description">
+              A Streamlit and OpenCV surf video analysis demo that calibrates a fixed camera view, detects wave events, and estimates wave height, velocity, and confidence from uploaded footage.
+            </p>
+
+            {/* List of project features and achievements */}
+            <ul className="project-features">
+              <li>Calibrates a fixed camera view and detects wave events from uploaded footage</li>
+              <li>Estimates wave height, velocity, and confidence for detected waves</li>
+              <li>Added Open-Meteo weather context and optional OpenAI-generated surf reports</li>
+              <li>Built June 2026</li>
+            </ul>
+          </div>
+        </div>
+
         {/* Ticker Matcher API Project Card */}
         <div className="project-card">
           {/* Project header with title and technology stack */}
@@ -71,7 +103,7 @@ const Projects: React.FC = () => {
             {/* List of project features and achievements */}
             <ul className="project-features">
               <li>Deployed on AWS EC2 with load balancer for scalability and high availability</li>
-              <li>Achieved 95.3% F1 score for company name retrieval</li>
+              <li>Achieved 97.4% precision, 97.3% recall, and 95.5% F1 across 10,000 test cases</li>
               <li>Handles two-word user input with high precision and recall</li>
               <li>Real time API responses for efficient data retrieval</li>
             </ul>
