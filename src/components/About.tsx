@@ -169,6 +169,11 @@ const About: React.FC = () => {
               <li>2025 Summit League Championship All-Tournament Team, awarded to the top 11 players in the postseason</li>
               <li>2025 CSC Academic All-District honors, requiring above a 3.5 cumulative GPA and starting in two-thirds of games</li>
               <li>Named CAA Rookie of the Week (10/23/23) and made 19 appearances with 16 starts in first season</li>
+              <li>Started all 16 matches appeared in</li>
+              <li>Played all 90 minutes at Kansas City</li>
+              <li>Contributed to team program record 10 single-season shutouts</li>
+              <li>Conference USA Commissioner's Academic Medal recipient</li>
+              <li>Conference USA Academic Honor Roll</li>
             </ul>
           </div>
         </div>
