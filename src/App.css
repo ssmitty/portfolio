@@ -89,27 +89,6 @@
   border-color: rgba(255, 255, 255, 0.85); /* Brighter outline */
 }
 
-/* Sound toggle button in the header corner */
-.sound-toggle {
-  position: absolute; /* Pin to the corner */
-  top: 1rem; /* Distance from top */
-  right: 1rem; /* Distance from right */
-  background: rgba(255, 255, 255, 0.1); /* Subtle translucent fill */
-  color: #ffffff; /* White text */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle outline */
-  border-radius: 20px; /* Pill shape */
-  padding: 0.35rem 0.85rem; /* Compact padding */
-  font-size: 0.8rem; /* Small label */
-  font-weight: 500; /* Medium weight */
-  cursor: pointer; /* Interactive cursor */
-  transition: all 0.2s ease; /* Smooth hover */
-}
-
-/* Hover state for the sound toggle */
-.sound-toggle:hover {
-  background: rgba(255, 255, 255, 0.2); /* Brighter fill */
-  border-color: rgba(255, 255, 255, 0.85); /* Brighter outline */
-}
 
 
 
@@ -186,13 +165,5 @@
   /* Reduced padding for mobile content */
   .main-content {
     padding: 1rem;
-  }
-
-  /* Keep the sound toggle compact on mobile */
-  .sound-toggle {
-    top: 0.75rem;
-    right: 0.75rem;
-    font-size: 0.75rem;
-    padding: 0.3rem 0.7rem;
   }
 } 
