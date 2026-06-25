@@ -1,169 +1,152 @@
-
-
-/* Root application container */
 .App {
-  min-height: 100vh; /* Ensures the app takes up the full viewport height */
-  background-color: var(--bg-light); /* Light background for better readability */
+  min-height: 100vh;
 }
 
-/* Main header with photo background and translucent blue overlay (set inline in App.tsx) */
 .header {
-  position: relative; /* Anchor for the absolutely positioned sound toggle */
-  background-color: var(--ud-blue); /* Solid blue fallback if the image fails to load */
-  color: #ffffff; /* Crisp white text */
-  padding: 4rem 1rem 2.5rem; /* Generous vertical padding for the photo backdrop */
-  text-align: center; /* Center all header content */
-  box-shadow: var(--shadow); /* Add depth with shadow */
+  position: relative;
+  color: #ffffff;
+  padding: 4rem 1rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(22, 33, 43, 0.18);
 }
 
-/* Container for header content (name, tagline, links) */
+.header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
 .header-content {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  margin-bottom: 2rem; /* Space between content and navigation */
+  flex-direction: column;
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto 2rem;
 }
 
-/* Name styling */
 .header-content h1 {
-  font-size: 2.75rem; /* Large, prominent font size */
-  margin-bottom: 0.75rem; /* Space between name and subtitle */
-  font-weight: 700; /* Bold weight for emphasis */
-  letter-spacing: -0.02em; /* Tighter, more refined heading */
-  position: relative; /* Anchor for the accent underline */
+  margin-bottom: 0.8rem;
+  font-size: clamp(2.7rem, 7vw, 5.25rem);
+  line-height: 0.95;
+  letter-spacing: 0;
 }
 
-/* Accent underline beneath the name */
-.header-content h1::after {
-  content: ""; /* Decorative element */
-  display: block; /* Block for sizing */
-  width: 56px; /* Short accent line */
-  height: 3px; /* Thin line */
-  margin: 0.75rem auto 0; /* Center beneath the name */
-  background: rgba(255, 255, 255, 0.85); /* Soft white accent */
-  border-radius: 2px; /* Rounded ends */
-}
-
-/* Primary subtitle (degree line) */
 .header-subtitle {
-  font-size: 1.05rem; /* Slightly larger than body text */
-  font-weight: 500; /* Medium weight for emphasis */
-  color: rgba(255, 255, 255, 0.95); /* Crisp white */
-  max-width: 640px; /* Constrain line length for readability */
-  margin: 0 auto; /* Center the subtitle */
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 650;
+  line-height: 1.5;
 }
 
-/* Secondary tagline (role and athletics) */
 .header-tagline {
-  font-size: 0.95rem; /* Smaller supporting line */
-  font-weight: 400; /* Regular weight */
-  color: rgba(255, 255, 255, 0.78); /* Softer white for hierarchy */
-  margin: 0.4rem auto 0; /* Space above tagline */
-  letter-spacing: 0.01em; /* Subtle spacing */
+  max-width: 680px;
+  margin: 0.5rem auto 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
-/* Row of quick links (GitHub, LinkedIn, Email) */
 .header-links {
   display: flex;
-  justify-content: center; /* Center the links */
-  gap: 0.6rem; /* Space between links */
-  flex-wrap: wrap; /* Wrap on small screens */
-  margin-top: 1.25rem; /* Space above the links */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
 }
 
-/* Individual quick link styling */
 .header-links a {
-  color: #ffffff; /* White text */
-  text-decoration: none; /* Remove underline */
-  font-size: 0.85rem; /* Compact size */
-  font-weight: 500; /* Medium weight */
-  padding: 0.4rem 0.9rem; /* Pill padding */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle outline */
-  border-radius: 20px; /* Pill shape */
-  transition: all 0.2s ease; /* Smooth hover */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  padding: 0.6rem 0.95rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: background 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
 }
 
-/* Hover state for quick links */
 .header-links a:hover {
-  background: rgba(255, 255, 255, 0.14); /* Subtle fill */
-  border-color: rgba(255, 255, 255, 0.85); /* Brighter outline */
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.72);
 }
 
-
-
-
-/* Navigation container */
 .navigation {
-  display: flex;
-  justify-content: center; /* Center the navigation buttons */
-  gap: 1rem; /* Space between buttons */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  background: rgba(6, 35, 52, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
 }
 
-/* Individual navigation button styling */
 .nav-button {
-  background: transparent; /* Transparent background by default */
-  color: rgba(255, 255, 255, 0.92); /* Clean white text */
-  border: 1px solid rgba(255, 255, 255, 0.45); /* Subtle white outline */
-  padding: 0.6rem 1.4rem; /* Comfortable padding for clicking */
-  border-radius: 8px; /* Refined, less pill-like corners */
-  font-size: 0.95rem; /* Readable font size */
-  font-weight: 500; /* Medium weight for a cleaner look */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: all 0.2s ease; /* Smooth transitions for all changes */
-  min-width: 110px; /* Minimum width for consistency */
+  min-width: 108px;
+  min-height: 2.55rem;
+  padding: 0.65rem 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 800;
+  transition: background 0.18s ease, color 0.18s ease;
 }
 
-/* Hover state for navigation buttons */
 .nav-button:hover {
-  background: rgba(255, 255, 255, 0.12); /* Subtle fill on hover */
-  border-color: rgba(255, 255, 255, 0.8); /* Brighter outline on hover */
+  background: rgba(255, 255, 255, 0.12);
 }
 
-/* Active state for the currently selected tab */
 .nav-button.active {
-  background: #ffffff; /* White background */
-  color: var(--ud-blue); /* Blue text */
-  border-color: #ffffff; /* Match background */
-  box-shadow: var(--shadow); /* Shadow for depth */
+  color: var(--text-dark);
+  background: #ffffff;
 }
 
-
-
-/* Main content container */
 .main-content {
-  max-width: 1200px; /* Maximum width for readability */
-  margin: 0 auto; /* Center the content */
-  padding: 2rem; /* Padding around content */
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.25rem 0 3rem;
 }
-
-
 
 @media (max-width: 768px) {
-  /* Smaller font size for mobile */
-  .header-content h1 {
-    font-size: 2rem;
+  .header {
+    padding-top: 3rem;
   }
 
-  /* Smaller subtitle for mobile */
-  .header-subtitle {
-    font-size: 0.95rem;
+  .header-links {
+    gap: 0.45rem;
   }
 
-  /* Tighter spacing for mobile navigation */
+  .header-links a {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 9rem;
+  }
+
   .navigation {
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: min(100%, 28rem);
   }
-  
-  /* Smaller buttons for mobile */
+
   .nav-button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    min-width: 100px;
+    min-width: 0;
+    padding-inline: 0.65rem;
   }
-  
-  /* Reduced padding for mobile content */
-  .main-content {
-    padding: 1rem;
-  }
-} 
+}

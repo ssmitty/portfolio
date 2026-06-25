@@ -1,60 +1,54 @@
-
-
-/* CSS Reset • Remove default browser styling */
 * {
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
-  box-sizing: border-box; /* Include padding and border in element width */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-/* Main body element styling */
-body {
-  /* Font stack with fallbacks for cross platform compatibility */
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  
-  /* Font smoothing for better rendering on webkit browsers */
-  -webkit-font-smoothing: antialiased;
-  
-  /* Font smoothing for better rendering on Firefox */
-  -moz-osx-font-smoothing: grayscale;
-  
-  /* Light background color for better readability */
-  background-color: #f5f5f5;
-  
-  /* Default text color for good contrast */
-  color: #333;
-}
-
-
-/* Monospace font for code elements */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-
-/* Root element for defining global CSS variables */
 :root {
-  /* Primary blue palette */
-  --ud-blue: #00539B; /* Primary brand blue */
-  --ud-blue-dark: #013a63; /* Deep blue for gradients and emphasis */
-  --ud-blue-light: #eaf2fb; /* Soft blue for subtle backgrounds and tags */
+  --ud-blue: #00539b;
+  --ud-blue-dark: #073b63;
+  --ud-blue-light: #e9f3fb;
+  --accent: #2081ad;
+  --accent-warm: #c9782f;
+  --text-dark: #16212b;
+  --text-light: #5d6b78;
+  --bg-light: #f6f7f4;
+  --surface: #ffffff;
+  --surface-soft: #f0f5f3;
+  --white: #ffffff;
+  --ud-gold: #ffffff;
+  --border: #dce4e2;
+  --shadow: 0 12px 34px rgba(28, 45, 57, 0.08);
+  --shadow-hover: 0 18px 42px rgba(28, 45, 57, 0.14);
+}
 
-  /* Neutral on-blue text color (replaces former gold accent) */
-  --ud-gold: #ffffff; /* Retained name for compatibility; now clean white on blue */
+html {
+  scroll-behavior: smooth;
+}
 
-  /* Text Colors */
-  --text-dark: #1f2933; /* Primary content text */
-  --text-light: #5c6773; /* Secondary content text */
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(246, 247, 244, 0.94), rgba(246, 247, 244, 1)),
+    radial-gradient(circle at 18% 8%, rgba(201, 120, 47, 0.16), transparent 32%),
+    radial-gradient(circle at 88% 12%, rgba(32, 129, 173, 0.16), transparent 30%);
+  color: var(--text-dark);
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  /* Background Colors */
-  --bg-light: #f6f8fb; /* Page background */
-  --white: #ffffff; /* Card backgrounds */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
 
-  /* Borders */
-  --border: #e3e8ef; /* Subtle card and divider borders */
+a {
+  color: inherit;
+}
 
-  /* Shadow Effects */
-  --shadow: 0 1px 3px rgba(16, 42, 67, 0.08), 0 1px 2px rgba(16, 42, 67, 0.06); /* Soft, layered shadow */
-  --shadow-hover: 0 8px 24px rgba(16, 42, 67, 0.12); /* Elevated shadow for hover */
-} 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

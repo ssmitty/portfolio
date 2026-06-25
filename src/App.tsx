@@ -5,35 +5,15 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import headerBg from './assets/header-bg.png';
 
-// Translucent blue overlay layered over the beach photo so header text stays readable
 const headerStyle: React.CSSProperties = {
-  backgroundImage: `linear-gradient(135deg, rgba(0, 83, 155, 0.72) 0%, rgba(1, 58, 99, 0.82) 100%), url(${headerBg})`,
+  backgroundImage: `linear-gradient(135deg, rgba(5, 36, 53, 0.78) 0%, rgba(0, 83, 155, 0.66) 48%, rgba(60, 71, 61, 0.7) 100%), url(${headerBg})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 };
 
-/**
- * Main App Component
- *
- * Manages the overall layout and tab navigation.
- *
- * @component
- * @returns {JSX.Element} The main application layout
- */
 const App: React.FC = () => {
-  // State to track which navigation tab is currently active
-  const [activeTab, setActiveTab] = useState<string>('about');
+  const [activeTab, setActiveTab] = useState<string>('projects');
 
-  /**
-   * Handles navigation tab changes.
-   */
-  const handleTabChange = (tabName: string) => {
-    setActiveTab(tabName);
-  };
-
-  /**
-   * Renders the appropriate content component based on the active tab.
-   */
   const renderContent = () => {
     switch (activeTab) {
       case 'about':
@@ -43,58 +23,57 @@ const App: React.FC = () => {
       case 'projects':
         return <Projects />;
       default:
-        return <About />;
+        return <Projects />;
     }
   };
 
   return (
     <div className="App">
-      {/* Header Section */}
       <header className="header" style={headerStyle}>
         <div className="header-content">
           <h1>Sean Smith</h1>
           <p className="header-subtitle">
-            B.S. Computer Science &amp; Mathematics, University of Delaware
+            Computer science and mathematics student building deployed software,
+            data products, and AI-assisted tools.
           </p>
-          <p className="header-tagline">Software Engineer &nbsp;&middot;&nbsp; Division I Soccer Player</p>
+          <p className="header-tagline">
+            Software engineer, applied math student, and Division I soccer player at
+            the University of Delaware.
+          </p>
 
           <div className="header-links">
+            <a href="https://ssmitty-wave-tracker-app-ch6ihf.streamlit.app/" target="_blank" rel="noopener noreferrer">Wave Vision</a>
             <a href="https://github.com/ssmitty" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/sean-matthew-smith/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:ssmitty@udel.edu">Email</a>
-            <a href="tel:+16098150282">609-815-0282</a>
             <a href={`${process.env.PUBLIC_URL}/docs/resume.pdf`} target="_blank" rel="noopener noreferrer">Resume</a>
             <a href={`${process.env.PUBLIC_URL}/docs/transcript.pdf`} target="_blank" rel="noopener noreferrer">Transcript</a>
           </div>
         </div>
 
-        {/* Navigation Tabs */}
-        <nav className="navigation">
+        <nav className="navigation" aria-label="Portfolio sections">
           <button
-            className={`nav-button ${activeTab === 'about' ? 'active' : ''}`}
-            onClick={() => handleTabChange('about')}
+            className={`nav-button ${activeTab === 'projects' ? 'active' : ''}`}
+            onClick={() => setActiveTab('projects')}
           >
-            About
+            Projects
           </button>
           <button
             className={`nav-button ${activeTab === 'experience' ? 'active' : ''}`}
-            onClick={() => handleTabChange('experience')}
+            onClick={() => setActiveTab('experience')}
           >
             Experience
           </button>
           <button
-            className={`nav-button ${activeTab === 'projects' ? 'active' : ''}`}
-            onClick={() => handleTabChange('projects')}
+            className={`nav-button ${activeTab === 'about' ? 'active' : ''}`}
+            onClick={() => setActiveTab('about')}
           >
-            Projects
+            About
           </button>
         </nav>
       </header>
 
-      {/* Main Content Area */}
-      <main className="main-content">
-        {renderContent()}
-      </main>
+      <main className="main-content">{renderContent()}</main>
     </div>
   );
 };
