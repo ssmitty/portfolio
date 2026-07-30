@@ -29,6 +29,18 @@ const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'Surf Session Warehouse',
+    summary:
+      'End-to-end surf analytics warehouse that models forecast conditions, spot performance, session logs, and pipeline health in a Streamlit dashboard.',
+    stack: ['Python', 'PostgreSQL', 'dbt', 'Streamlit', 'Open-Meteo', 'Prefect'],
+    highlights: [
+      'Built ingestion, warehouse, and dashboard layers around surf spots, sessions, marine forecasts, and weather forecasts.',
+      'Modeled 1,008 raw forecast rows into daily spot condition facts and analytics marts.',
+      'Added deploy-safe demo mode so the public dashboard still runs when local PostgreSQL is unavailable.',
+    ],
+    githubUrl: 'https://github.com/ssmitty/surf-session-warehouse',
+  },
+  {
     title: 'Ticker Matcher API',
     summary:
       'Company lookup API for matching user-entered public company names to NASDAQ/NYSE entities and associated SEC filing data.',
