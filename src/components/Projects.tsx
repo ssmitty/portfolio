@@ -39,6 +39,7 @@ const projects: Project[] = [
       'Added deploy-safe demo mode so the public dashboard still runs when local PostgreSQL is unavailable.',
     ],
     githubUrl: 'https://github.com/ssmitty/surf-session-warehouse',
+    liveUrl: 'https://surf-session-warehouse.streamlit.app/',
   },
   {
     title: 'Ticker Matcher API',

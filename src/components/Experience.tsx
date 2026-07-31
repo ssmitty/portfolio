@@ -12,6 +12,53 @@ const Experience: React.FC = () => {
     <div className="experience">
       <h2>Professional Experience</h2>
 
+      {/* Surf Session Warehouse - Data Engineering Project (July 2026) */}
+      <div className="experience-card">
+        <div className="experience-header">
+          <h3>Data Engineering Project, Surf Session Warehouse</h3>
+          <div className="experience-meta">
+            <span className="location">Portfolio Project</span>
+            <span className="duration">July 2026</span>
+          </div>
+        </div>
+        <div className="experience-content">
+          <div className="tech-stack">
+            <span className="tech-tag">Python</span>
+            <span className="tech-tag">PostgreSQL</span>
+            <span className="tech-tag">dbt</span>
+            <span className="tech-tag">Streamlit</span>
+            <span className="tech-tag">Open-Meteo</span>
+            <span className="tech-tag">Prefect</span>
+          </div>
+          <div className="achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Built an end-to-end surf analytics warehouse that ingests Open-Meteo marine and weather forecasts, stores raw rows in PostgreSQL, and models analytics-ready marts with dbt</li>
+              <li>Modeled 1,008 raw forecast rows into daily spot condition facts, spot performance summaries, forecast-to-session quality views, and pipeline health reporting</li>
+              <li>Deployed a Streamlit dashboard with a demo-mode fallback so the public app can run without local PostgreSQL while preserving the warehouse story</li>
+            </ul>
+          </div>
+          <div className="experience-links">
+            <a
+              className="experience-link experience-link-primary"
+              href="https://surf-session-warehouse.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Dashboard
+            </a>
+            <a
+              className="experience-link"
+              href="https://github.com/ssmitty/surf-session-warehouse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Wodify - Software Engineer Intern (June 2026 - Present) */}
       <div className="experience-card">
         <div className="experience-header">
