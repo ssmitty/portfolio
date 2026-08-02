@@ -34,7 +34,7 @@ const Experience: React.FC = () => {
             <ul>
               <li>Contributed production-shipped backend work for Wodify, a fitness software platform serving 1M+ athletes across thousands of gyms</li>
               <li>Designed the relational data model for a Milestones and Achievements feature in OutSystems O11, following 4-Layer Canvas architecture to keep domain, service, and orchestration modules cleanly separated</li>
-              <li>Implemented upsert server actions and service actions for milestone group management, using scoped module visibility patterns so business logic could be consumed safely across the application</li>
+              <li>Built an asynchronous milestone progress process that updates and awards client achievements when members sign in, book appointments, pass anniversary dates, or extend weekly streaks, supporting all achievement types</li>
               <li>Wrote injection-safe dynamic SQL for real-time filtering by achievement type, status, and client visibility, supporting maintainable query behavior in production workflows</li>
               <li>Built a bootstrap process to backfill milestone progress for existing gym members across Attendance, Weekly Streaks, and Gym Anniversary groups</li>
             </ul>
