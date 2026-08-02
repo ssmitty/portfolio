@@ -1,0 +1,74 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=0pt}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\begin{document}
+\raggedright
+
+\begin{center}
+{\Large \textbf{Sean Smith}}\\
+seansmitth1926@gmail.com \;|\;
+\href{https://github.com/ssmitty/portfolio.git}{GitHub} \;|\;
+\href{https://linkedin.com/in/sean-matthew-smith}{LinkedIn}
+\end{center}
+
+\section*{Skills}
+Python, SQL, PostgreSQL, dbt, Streamlit, Prefect, AWS, DynamoDB, Lambda, OutSystems O11, JavaScript, TypeScript, C/C++, REST APIs, Data Modeling, Model Selection, Model Evaluation
+
+\section*{Certifications}
+\textbf{Associate Developer O11}, OutSystems \hfill June 2026 \\
+Reactive web development, data modeling, server-side logic, and application lifecycle management
+
+\section*{Experience}
+
+\textbf{Software Engineer Intern, Wodify} -- Philadelphia, Hybrid \hfill June 2026 -- Present
+\begin{itemize}
+\item Engineered production-shipped backend functionality for Wodify, a fitness software platform serving 1M+ athletes across thousands of gyms, using OutSystems O11, SQL, and 4-Layer Canvas architecture.
+\item Architected the data model, service boundaries, and async progress logic for a Milestones \& Achievements system supporting all achievement types.
+\item Automated client milestone awards when members sign in, book appointments, pass anniversary dates, or extend weekly streaks, using injection-safe SQL and production workflow filters.
+\end{itemize}
+
+\textbf{Software Engineer Intern, D2.ai} -- Remote \hfill Dec 2025 -- Feb 2026
+\begin{itemize}
+\item Optimized cyber insurance clustering workflows by sampling large datasets while preserving analytical coverage, reducing shape analysis bottlenecks in Python model evaluation pipelines.
+\end{itemize}
+
+\textbf{Data Engineer Intern, Prep U} -- Remote \hfill Aug 2025 -- Nov 2025
+\begin{itemize}
+\item Automated near real-time assessment feedback with a DynamoDB Stream to AWS Lambda pipeline that triggers AI-generated guidance on submission.
+\end{itemize}
+
+\textbf{Data Science Intern, D2.ai} -- Remote \hfill June 2025 -- July 2025
+\begin{itemize}
+\item Achieved 97.4\% precision, 97.3\% recall, and 95.5\% F1 across 10,000 test cases by developing a Python company lookup API for NASDAQ/NYSE and SEC filing data.
+\item Deployed the lookup API on AWS EC2 with a load balancer and modeled 33 rating features in a mock insurance quote simulator.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Surf Session Warehouse} -- \href{https://github.com/ssmitty/surf-session-warehouse}{GitHub} \;|\; \href{https://surf-session-warehouse.streamlit.app/}{Live App}
+\begin{itemize}
+\item Built an end-to-end surf analytics warehouse using Python, PostgreSQL, dbt, Prefect, and Streamlit to ingest Open-Meteo forecast data and model spot-level surf conditions.
+\item Modeled 1,008 raw forecast rows into daily condition facts, spot performance summaries, forecast-to-session quality views, and pipeline health reporting.
+\end{itemize}
+
+\textbf{Wave Vision} -- \href{https://github.com/ssmitty/wave-tracker}{GitHub} \;|\; \href{https://ssmitty-wave-tracker-app-ch6ihf.streamlit.app/}{Live App}
+\begin{itemize}
+\item Built a Streamlit and OpenCV surf video analysis app that calibrates fixed-camera footage, detects wave events, and estimates wave height, velocity, set intervals, and confidence.
+\end{itemize}
+
+\section*{Education}
+
+\textbf{University of Delaware} \hfill Aug 2023 -- May 2027\\
+B.S. Computer Science; B.S. Mathematics; M.S. Applied Mathematics
+
+\end{document}
