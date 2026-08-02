@@ -125,47 +125,6 @@
   font-weight: 600; /* Semi-bold for emphasis */
 }
 
-.experience-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 1rem;
-}
-
-.experience-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.4rem;
-  padding: 0.65rem 0.9rem;
-  color: var(--ud-blue);
-  background: var(--white);
-  border: 1px solid rgba(0, 83, 155, 0.2);
-  border-radius: 6px;
-  font-size: 0.88rem;
-  font-weight: 800;
-  text-decoration: none;
-  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
-}
-
-.experience-link:hover {
-  transform: translateY(-1px);
-  background: var(--ud-blue-light);
-  border-color: rgba(0, 83, 155, 0.35);
-}
-
-.experience-link-primary {
-  color: var(--white);
-  background: var(--ud-blue);
-  border-color: var(--ud-blue);
-}
-
-.experience-link-primary:hover {
-  color: var(--white);
-  background: var(--ud-blue-dark);
-  border-color: var(--ud-blue-dark);
-}
-
 @media (max-width: 768px) {
   /* Reduced padding for mobile cards */
   .experience-card {
@@ -187,13 +146,5 @@
   .tech-tag {
     font-size: 0.75rem; /* Smaller font */
     padding: 0.2rem 0.6rem; /* Reduced padding */
-  }
-
-  .experience-links {
-    flex-direction: column;
-  }
-
-  .experience-link {
-    width: 100%;
   }
 }
