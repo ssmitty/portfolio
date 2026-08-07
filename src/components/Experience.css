@@ -1,150 +1,123 @@
 
-
-/* Main experience container */
 .experience {
-  padding: 1rem 0; /* Vertical padding for spacing */
+  padding: 0.5rem 0 2rem;
 }
 
-/* Experience section header */
 .experience h2 {
-  color: var(--ud-blue); /* UD blue for consistency */
-  font-size: 1.8rem; /* Large, prominent font size */
-  margin-bottom: 2rem; /* Space below header */
-  text-align: center; /* Center alignment */
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  text-align: center;
 }
 
-
-
-/* Main experience card container */
 .experience-card {
-  background: var(--white); /* White background */
-  border: 1px solid var(--border); /* Subtle border for definition */
-  border-radius: 12px; /* Rounded corners */
-  padding: 2rem; /* Internal spacing */
-  box-shadow: var(--shadow); /* Depth with shadow */
-    margin-bottom: 1.5rem; /* Space below each experience card */
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect for experience cards */
 .experience-card:hover {
-  transform: translateY(-2px); /* Slight lift on hover */
-  box-shadow: var(--shadow-hover); /* Enhanced shadow on hover */
-  margin-bottom: 2rem; /* Space below each experience card on hover */
-
-}
-.experience-card-wrapper {
-  margin: 2rem 0;
+  border-color: rgba(0, 83, 155, 0.26);
+  box-shadow: var(--shadow-hover);
 }
 
-
-
-/* Container for experience title and metadata */
 .experience-header {
-  margin-bottom: 1.5rem; /* Space below header */
+  margin-bottom: 1.25rem;
 }
 
-/* Experience title styling */
 .experience-header h3 {
-  color: var(--ud-blue); /* UD blue for emphasis */
-  font-size: 1.5rem; /* Large font size */
-  margin-bottom: 0.5rem; /* Space below title */
+  margin-bottom: 0.6rem;
+  color: var(--ud-blue);
+  font-size: 1.35rem;
+  line-height: 1.2;
 }
 
-
-
-/* Container for location and duration information */
 .experience-meta {
   display: flex;
-  gap: 1rem; /* Space between metadata items */
-  color: var(--text-light); /* Light text for secondary information */
-  font-size: 0.9rem; /* Smaller font size */
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
 }
 
-/* Individual metadata items (location, duration) */
 .location, .duration {
-  background: var(--bg-light); /* Light background */
-  padding: 0.25rem 0.75rem; /* Comfortable padding */
-  border-radius: 15px; /* Rounded pill shape */
-  font-weight: 500; /* Medium weight for emphasis */
+  padding: 0.32rem 0.7rem;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-weight: 650;
 }
 
-
-/* Container for technology tags */
 .tech-stack {
   display: flex;
-  flex-wrap: wrap; /* Allow tags to wrap to new lines */
-  gap: 0.5rem; /* Space between technology tags */
-  margin-bottom: 1.5rem; /* Space below technology stack */
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
 }
 
-/* Individual technology tag styling */
 .tech-tag {
-  background: var(--ud-blue-light); /* Soft blue background */
-  color: var(--ud-blue); /* Blue text for a clean, modern look */
-  padding: 0.3rem 0.8rem; /* Comfortable padding */
-  border-radius: 6px; /* Refined corners */
-  font-size: 0.8rem; /* Small, readable font */
-  font-weight: 600; /* Semi-bold for emphasis */
-  border: 1px solid rgba(0, 83, 155, 0.12); /* Subtle blue outline */
+  padding: 0.34rem 0.65rem;
+  color: var(--ud-blue);
+  background: var(--ud-blue-light);
+  border: 1px solid rgba(0, 83, 155, 0.12);
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
-
-
-/* Achievements section header */
 .achievements h4 {
-  color: var(--ud-blue); /* UD blue for consistency */
-  font-size: 1.2rem; /* Medium font size */
-  margin-bottom: 1rem; /* Space below header */
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+  font-size: 1rem;
 }
 
-/* Container for achievements list */
 .achievements ul {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
+  display: grid;
+  gap: 0.65rem;
+  padding: 0;
+  list-style: none;
 }
 
-/* Individual achievement items */
 .achievements li {
-  padding: 0.75rem 0; /* Vertical spacing between achievements */
-  border-bottom: 1px solid #f0f0f0; /* Subtle border between items */
-  color: var(--text-dark); /* Dark text for readability */
-  font-size: 0.95rem; /* Standard font size */
-  line-height: 1.5; /* Comfortable line spacing */
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
-/* Remove border from last achievement item */
-.achievements li:last-child {
-  border-bottom: none; /* No border on last item */
-}
-
-/* Emphasis styling for achievement titles */
-.achievements strong {
-  color: var(--ud-blue); /* UD blue for emphasis */
-  font-weight: 600; /* Semi-bold for emphasis */
+.achievements li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.36rem;
+  height: 0.36rem;
+  background: var(--accent);
+  border-radius: 999px;
 }
 
 @media (max-width: 768px) {
-  /* Reduced padding for mobile cards */
   .experience-card {
-    padding: 1.5rem;
+    padding: 1.15rem;
   }
-  
-  /* Stack metadata items vertically on mobile */
+
   .experience-meta {
-    flex-direction: column; /* Vertical layout */
-    gap: 0.5rem; /* Reduced spacing */
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  /* Tighter spacing for mobile technology tags */
+
   .tech-stack {
     gap: 0.25rem;
   }
-  
-  /* Smaller technology tags for mobile */
+
   .tech-tag {
-    font-size: 0.75rem; /* Smaller font */
-    padding: 0.2rem 0.6rem; /* Reduced padding */
+    font-size: 0.75rem;
+    padding: 0.25rem 0.55rem;
   }
 }

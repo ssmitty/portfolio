@@ -1,23 +1,16 @@
 import React from 'react';
 import './Experience.css';
 
-/**
- * Experience Component
- *
- * Displays Sean Smith's professional experience with role, company, duration,
- * and key achievements, ordered from most to least recent.
- */
 const Experience: React.FC = () => {
   return (
     <div className="experience">
       <h2>Professional Experience</h2>
 
-      {/* Wodify - Software Engineer Intern (June 2026 - Present) */}
       <div className="experience-card">
         <div className="experience-header">
           <h3>Software Engineer Intern, Wodify</h3>
           <div className="experience-meta">
-            <span className="location">Philadelphia, Hybrid</span>
+            <span className="location">Philadelphia, PA</span>
             <span className="duration">June 2026 - Present</span>
           </div>
         </div>
@@ -27,22 +20,19 @@ const Experience: React.FC = () => {
             <span className="tech-tag">SQL</span>
             <span className="tech-tag">Data Modeling</span>
             <span className="tech-tag">4-Layer Canvas</span>
-            <span className="tech-tag">Web REST</span>
+            <span className="tech-tag">Asynchronous Processing</span>
           </div>
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Contributed production-shipped backend work for Wodify, a fitness software platform serving 1M+ athletes across thousands of gyms</li>
-              <li>Designed the relational data model for a Milestones and Achievements feature in OutSystems O11, following 4-Layer Canvas architecture to keep domain, service, and orchestration modules cleanly separated</li>
-              <li>Built an asynchronous milestone progress process that updates and awards client achievements when members sign in, book appointments, pass anniversary dates, or extend weekly streaks, supporting all achievement types</li>
-              <li>Wrote injection-safe dynamic SQL for real-time filtering by achievement type, status, and client visibility, supporting maintainable query behavior in production workflows</li>
-              <li>Built a bootstrap process to backfill milestone progress for existing gym members across Attendance, Weekly Streaks, and Gym Anniversary groups</li>
+              <li>Delivered production backend functionality for a fitness platform serving 1M+ athletes across thousands of gyms using OutSystems O11, SQL, and 4-Layer Canvas architecture.</li>
+              <li>Designed the data model, service boundaries, and asynchronous processing logic for a Milestones and Achievements system, enabling automated evaluation across multiple achievement types and member events.</li>
+              <li>Reduced client milestone processing time by 60 percent by loading milestone records from the database once and using an in-memory lookup table instead of repeated per-client queries.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* D2.ai - Software Engineer Intern (Dec 2025 - Feb 2026) */}
       <div className="experience-card">
         <div className="experience-header">
           <h3>Software Engineer Intern, D2.ai</h3>
@@ -61,14 +51,12 @@ const Experience: React.FC = () => {
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Reduced shape analysis bottleneck by sampling datasets while preserving coverage, improving processing efficiency for cyber insurance clustering models</li>
-              <li>Optimized and validated a clustering algorithm on cyber insurance data, increasing data reliability across the analysis pipeline</li>
+              <li>Reduced CODA shape-analysis runtime by 83 percent by implementing stratified sampling that preserved representative analytical coverage across large cyber-insurance datasets.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Prep U - Data Engineer Intern (Aug 2025 - Nov 2025) */}
       <div className="experience-card">
         <div className="experience-header">
           <h3>Data Engineer Intern, Prep U</h3>
@@ -87,15 +75,12 @@ const Experience: React.FC = () => {
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Decreased assessment feedback latency to near real-time by integrating OpenAI to auto-generate personalized guidance on student submission</li>
-              <li>Improved query performance and maintainability by refactoring DynamoDB schemas and modularizing backend services</li>
-              <li>Automated the feedback pipeline end-to-end by building a DynamoDB Stream to Lambda workflow that triggers OpenAI generation on assessment completion</li>
+              <li>Enabled near-real-time AI assessment feedback by building an event-driven DynamoDB Streams-to-AWS Lambda pipeline that generated and stored guidance after each submission.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* D2.ai - Data Science Intern (June 2025 - July 2025) */}
       <div className="experience-card">
         <div className="experience-header">
           <h3>Data Science Intern, D2.ai</h3>
@@ -115,9 +100,8 @@ const Experience: React.FC = () => {
           <div className="achievements">
             <h4>Key Achievements</h4>
             <ul>
-              <li>Achieved 97.4% precision, 97.3% recall, and 95.5% F1 across 10,000 test cases by developing and deploying a public company lookup API for NASDAQ/NYSE and SEC filings</li>
-              <li>Ensured high availability and scalability by deploying the API on AWS EC2 with a load balancer</li>
-              <li>Quantified the impact of 33 rating features on yearly pricing by building a mock insurance quote simulator</li>
+              <li>Achieved 97.4 percent precision, 97.3 percent recall, and 95.5 percent F1 across 10,000 test cases by developing a Python company-lookup API for NASDAQ, NYSE, and SEC filing data.</li>
+              <li>Deployed the API on AWS EC2 behind an Application Load Balancer and supported automated insurance quote generation by modeling 33 company-rating features.</li>
             </ul>
           </div>
         </div>

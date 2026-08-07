@@ -17,12 +17,11 @@ const projects: Project[] = [
   {
     title: 'Wave Vision',
     summary:
-      'Deployed surf analytics app that analyzes fixed-camera beach footage with Streamlit, OpenCV, calibration overlays, weather context, and generated surf reports.',
-    stack: ['Python', 'Streamlit', 'OpenCV', 'Open-Meteo', 'OpenAI API'],
+      'Computer vision project that analyzes fixed-camera surf footage with OpenCV and calibrated wave-event detection.',
+    stack: ['Python', 'OpenCV', 'NumPy', 'OpenAI API'],
     highlights: [
-      'Accepts uploaded surf footage and calibrates horizon, shoreline, surf zone, and scale reference.',
-      'Estimates wave count, height, velocity, set intervals, and confidence from video frames.',
-      'Ships as a public Streamlit Cloud app recruiters can try directly from the portfolio.',
+      'Achieved 76 percent wave-event detection precision across 75 manually labeled events by developing an OpenCV pipeline for fixed-camera surf footage.',
+      'Uses calibration inputs to interpret horizon, shoreline, surf zone, and scale reference in uploaded footage.',
     ],
     githubUrl: 'https://github.com/ssmitty/wave-tracker',
     liveUrl: 'https://ssmitty-wave-tracker-app-ch6ihf.streamlit.app/',
@@ -31,12 +30,11 @@ const projects: Project[] = [
   {
     title: 'Surf Session Warehouse',
     summary:
-      'End-to-end surf analytics warehouse that models forecast conditions, spot performance, session logs, and pipeline health in a Streamlit dashboard.',
-    stack: ['Python', 'PostgreSQL', 'dbt', 'Streamlit', 'Open-Meteo', 'Prefect'],
+      'Automated surf analytics warehouse that turns forecast and buoy data into daily condition facts and quality views.',
+    stack: ['Python', 'SQL', 'Pandas', 'SQLAlchemy', 'Docker Compose'],
     highlights: [
-      'Built ingestion, warehouse, and dashboard layers around surf spots, sessions, marine forecasts, and weather forecasts.',
-      'Modeled 1,008 raw forecast rows into daily spot condition facts and analytics marts.',
-      'Added deploy-safe demo mode so the public dashboard still runs when local PostgreSQL is unavailable.',
+      'Achieved 77.4 percent agreement between forecasted surfability classifications and 159 NOAA/NDBC buoy observations across 3 surf spots by building an automated evaluation harness.',
+      'Transformed 1,008 raw forecast rows into daily condition facts, spot-performance summaries, forecast-to-session quality views, and pipeline-health reports using Python, PostgreSQL, dbt, and Prefect.',
     ],
     githubUrl: 'https://github.com/ssmitty/surf-session-warehouse',
     liveUrl: 'https://surf-session-warehouse.streamlit.app/',
@@ -94,8 +92,8 @@ const Projects: React.FC = () => {
         <p className="section-kicker">Selected work</p>
         <h2>Projects</h2>
         <p>
-          A mix of deployed apps, backend systems, and AI products, with links to
-          the live experience and source code wherever available.
+          Deployed apps, backend systems, and data products with source code and
+          live links where available.
         </p>
       </div>
 

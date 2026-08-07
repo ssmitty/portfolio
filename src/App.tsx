@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import headerBg from './assets/header-bg.png';
 
 const headerStyle: React.CSSProperties = {
-  backgroundImage: `linear-gradient(135deg, rgba(5, 36, 53, 0.78) 0%, rgba(0, 83, 155, 0.66) 48%, rgba(60, 71, 61, 0.7) 100%), url(${headerBg})`,
+  backgroundImage: `linear-gradient(135deg, rgba(3, 24, 40, 0.84) 0%, rgba(0, 83, 155, 0.74) 52%, rgba(8, 42, 70, 0.82) 100%), url(${headerBg})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 };
@@ -33,12 +33,12 @@ const App: React.FC = () => {
         <div className="header-content">
           <h1>Sean Smith</h1>
           <p className="header-subtitle">
-            Computer science and mathematics student building deployed software,
-            data products, and AI-assisted tools.
+            Software engineer intern and computer science student building backend
+            systems, data products, and computer vision tools.
           </p>
           <p className="header-tagline">
-            Software engineer, applied math student, and Division I soccer player at
-            the University of Delaware.
+            B.S. Computer Science, B.S. Mathematics, and M.S. Applied Mathematics
+            candidate at the University of Delaware.
           </p>
 
           <div className="header-links">
